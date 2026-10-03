@@ -1,0 +1,1547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROSELLE × CENT OF YAS — Beauty, Redefined</title>
+<meta name="description" content="ROSELLE × CENT OF YAS — two beauty houses, one curated destination. Order via WhatsApp +961 71 566 129.">
+<meta name="theme-color" content="#FFF5F9">
+<link rel="icon" href="https://i.imgur.com/3uT6Lfu.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Italiana&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ============ FOUNDATION ============ */
+:root{
+  --bg:#FFF5F9;
+  --ink:#372833;
+  --muted:#8E7B8B;
+  --pink-25:#FFFBFD;
+  --pink-50:#FCEFF4;
+  --pink-100:#F9E4ED;
+  --pink-200:#F3D3E1;
+  --pink-300:#E9BCD0;
+  --rose:#C985A1;
+  --rose-deep:#A85D80;
+  --lav-50:#F7F3FC;
+  --lav-100:#F0E9F8;
+  --lav-200:#E1D5F2;
+  --plum:#7A5B96;
+  --plum-deep:#3A2B40;
+  --line:rgba(55,40,51,.11);
+  --wa:#1E8A52;
+  --wa-deep:#15693E;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font:300 15px/1.75 'Jost',sans-serif;color:var(--ink);background:var(--bg);overflow-x:hidden}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+input,select{font:inherit;color:inherit}
+::selection{background:var(--pink-200)}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-track{background:var(--pink-50)}
+::-webkit-scrollbar-thumb{background:var(--pink-300);border-radius:9px;border:2px solid var(--pink-50)}
+::-webkit-scrollbar-thumb:hover{background:var(--rose)}
+html{scrollbar-width:thin;scrollbar-color:var(--pink-300) var(--pink-50)}
+.serif{font-family:'Italiana',serif;font-weight:400}
+.ita{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400}
+.container{width:min(100% - 48px,1400px);margin-inline:auto}
+section[id]{scroll-margin-top:88px}
+.tag{font:500 11px/1 'Jost',sans-serif;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.tilt{transition:transform .18s ease-out,border-color .4s,box-shadow .35s;transform-style:preserve-3d;position:relative}
+.tilt::after{content:"";position:absolute;inset:0;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.42),transparent 46%);opacity:0;transition:opacity .35s;pointer-events:none;z-index:1}
+.tilt:hover::after{opacity:1}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+
+/* ============ PRELOADER ============ */
+#preloader{position:fixed;inset:0;z-index:200;display:grid;place-items:center;background:linear-gradient(135deg,var(--pink-50) 0%,var(--lav-100) 100%);transition:opacity .8s var(--ease),visibility 0s .8s}
+#preloader.done{opacity:0;visibility:hidden}
+.pre-inner{text-align:center}
+.pre-logos{display:flex;justify-content:center;margin-bottom:30px}
+.pre-logos img{width:84px;height:84px;border-radius:50%;object-fit:cover;background:#fff;border:1px solid var(--line);padding:4px;box-shadow:0 18px 40px -20px rgba(168,93,128,.45);animation:prePop .8s var(--ease) both}
+.pre-logos img + img{margin-left:-20px;animation-delay:.12s}
+@keyframes prePop{from{opacity:0;transform:scale(.6)}to{opacity:1;transform:scale(1)}}
+.pre-word{font-family:'Italiana',serif;font-size:clamp(38px,7vw,58px);letter-spacing:.22em;color:var(--ink);overflow:hidden;line-height:1.15}
+.pre-word span{display:inline-block;transform:translateY(120%);animation:preWord .9s var(--ease) forwards;animation-delay:calc(.15s + var(--i)*.055s)}
+@keyframes preWord{to{transform:translateY(0)}}
+.pre-sub{margin-top:6px;font:500 10.5px 'Jost';letter-spacing:.42em;text-transform:uppercase;color:var(--rose-deep);opacity:0;animation:preFade .8s ease .55s forwards}
+.pre-bar{width:130px;height:1px;background:var(--pink-200);margin:30px auto 0;overflow:hidden}
+.pre-bar i{display:block;width:0;height:100%;background:var(--rose-deep);animation:preBar 1.5s var(--ease) .3s forwards}
+@keyframes preBar{to{width:100%}}
+@keyframes preFade{to{opacity:1}}
+
+/* ============ BUTTONS ============ */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:12px;height:52px;padding:0 30px;font:500 11.5px/1 'Jost';letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--ink);transition:background .35s,color .35s,border-color .35s;white-space:nowrap}
+.btn::after{content:"";position:absolute;top:0;left:-75%;width:42%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .65s ease;pointer-events:none}
+.btn:hover::after{left:135%}
+.btn svg{width:14px;height:14px;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.btn-solid{background:var(--ink);color:#fff}
+.btn-solid:hover{background:var(--rose-deep);border-color:var(--rose-deep)}
+.btn-line{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-wa{background:var(--wa);border-color:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-deep);border-color:var(--wa-deep)}
+.btn-wa svg{width:16px;height:16px}
+.link-arrow{display:inline-flex;align-items:center;gap:10px;font:500 11.5px 'Jost';letter-spacing:.2em;text-transform:uppercase;color:var(--ink);border-bottom:1px solid var(--ink);padding-bottom:6px;transition:color .3s,border-color .3s}
+.link-arrow svg{width:14px;height:14px;transition:transform .35s var(--ease)}
+.link-arrow:hover{color:var(--rose-deep);border-color:var(--rose-deep)}
+.link-arrow:hover svg{transform:translateX(5px)}
+
+/* ============ ANNOUNCEMENT ============ */
+.announce{border-bottom:1px solid var(--line);background:var(--pink-100)}
+.announce-in{display:flex;justify-content:center;padding:10px 0}
+.announce span{font:400 10.5px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--ink);transition:opacity .3s}
+.announce span.out{opacity:0}
+
+/* ============ NAVIGATION ============ */
+.site-header{position:sticky;top:0;z-index:60;background:var(--bg);transition:background .4s,border-color .4s,box-shadow .4s}
+.site-header.scrolled{background:rgba(255,245,249,.96);border-bottom:1px solid var(--line);box-shadow:0 12px 34px -26px rgba(168,93,128,.35)}
+.nav-in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:74px;transition:height .4s var(--ease)}
+.site-header.scrolled .nav-in{height:60px}
+.nav-links{display:flex;gap:clamp(18px,2.2vw,34px)}
+.nav-links a{font:500 11px 'Jost';letter-spacing:.2em;text-transform:uppercase;color:var(--ink);position:relative;padding:6px 0;transition:color .3s}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--rose-deep);transform:scaleX(0);transform-origin:right;transition:transform .4s var(--ease)}
+.nav-links a:hover{color:var(--rose-deep)}
+.nav-links a:hover::after{transform:scaleX(1);transform-origin:left}
+.nav-brand{display:flex;align-items:baseline;justify-content:center;gap:10px;font-family:'Italiana',serif;font-size:17px;letter-spacing:.16em;white-space:nowrap}
+.nav-brand .bx{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep);font-size:19px}
+.nav-actions{display:flex;justify-content:flex-end;align-items:center;gap:6px}
+.icon-btn{width:42px;height:42px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;transition:background .3s,transform .3s}
+.icon-btn:hover{background:var(--pink-100);transform:scale(1.06)}
+.icon-btn svg{width:19px;height:19px;stroke-width:1.6}
+.nav-bag{position:relative}
+.bag-count{position:absolute;top:2px;right:0;min-width:16px;height:16px;padding:0 4px;border-radius:8px;background:var(--rose-deep);color:#fff;font:500 9.5px/16px 'Jost';text-align:center;transform:scale(0);transition:transform .3s var(--ease)}
+.bag-count.has{transform:scale(1)}
+.nav-bag.bump .bag-count{animation:bump .5s var(--ease)}
+@keyframes bump{40%{transform:scale(1.45)}}
+.nav-burger{display:none;width:42px;height:42px;align-items:center;justify-content:center;justify-self:start}
+.nav-burger svg{width:21px;height:21px;stroke-width:1.5}
+@media (max-width:940px){
+  .nav-links{display:none}
+  .nav-burger{display:inline-flex}
+  .nav-brand{font-size:14.5px;gap:7px}
+  .nav-actions .icon-btn:first-child{display:none}
+}
+
+/* ============ MOBILE MENU ============ */
+.mmenu{position:fixed;inset:0;z-index:90;background:linear-gradient(160deg,var(--pink-50),var(--lav-100));display:flex;flex-direction:column;padding:22px 24px 34px;transform:translateY(-102%);transition:transform .55s var(--ease);overflow-y:auto}
+.mmenu.open{transform:translateY(0)}
+.mmenu-top{display:flex;justify-content:space-between;align-items:center}
+.mmenu-close{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:#fff}
+.mmenu-close svg{width:18px;height:18px;stroke-width:1.5}
+.mmenu-nav{margin-top:7vh;display:flex;flex-direction:column}
+.mmenu-nav a{display:flex;align-items:baseline;gap:16px;padding:15px 0;border-bottom:1px solid var(--line);font-family:'Italiana',serif;font-size:clamp(28px,7.4vw,38px);letter-spacing:.04em;opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease) .12s,transform .5s var(--ease) .12s,color .3s}
+.mmenu-nav a i{font:500 10px 'Jost';letter-spacing:.2em;color:var(--rose-deep);font-style:normal}
+.mmenu-nav a:hover{color:var(--rose-deep)}
+.mmenu.open .mmenu-nav a{opacity:1;transform:none}
+.mmenu.open .mmenu-nav a:nth-child(2){transition-delay:.17s}.mmenu.open .mmenu-nav a:nth-child(3){transition-delay:.22s}
+.mmenu.open .mmenu-nav a:nth-child(4){transition-delay:.27s}.mmenu.open .mmenu-nav a:nth-child(5){transition-delay:.32s}
+.mmenu.open .mmenu-nav a:nth-child(6){transition-delay:.37s}.mmenu.open .mmenu-nav a:nth-child(7){transition-delay:.42s}
+.mmenu-foot{margin-top:auto;padding-top:34px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.mmenu-brands{display:flex;align-items:center;gap:10px}
+.mmenu-brands img{width:36px;height:36px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+.mmenu-brands span{font:500 10.5px 'Jost';letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;background:var(--bg)}
+.orb{position:absolute;border-radius:50%;filter:blur(72px);pointer-events:none;z-index:0}
+.orb.o1{width:520px;height:520px;background:#FAD3E4;opacity:.6;top:-130px;right:-90px;animation:drift1 19s ease-in-out infinite}
+.orb.o2{width:430px;height:430px;background:#DFD2F6;opacity:.55;bottom:-130px;left:-130px;animation:drift2 23s ease-in-out infinite}
+.orb.o3{width:300px;height:300px;background:#F6DFEC;opacity:.5;top:36%;left:33%;animation:drift3 26s ease-in-out infinite}
+@keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-60px,50px) scale(1.12)}}
+@keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(70px,-40px) scale(1.08)}}
+@keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-45px,-55px) scale(.92)}}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,6vw,90px);align-items:center;min-height:calc(100vh - 118px);padding-block:clamp(36px,5vh,64px)}
+.hero [data-a]{opacity:0;transform:translateY(24px);animation:rise 1s var(--ease) forwards;animation-delay:var(--d,0s)}
+@keyframes rise{to{opacity:1;transform:none}}
+.split span{display:inline-block;opacity:0;transform:translateY(.55em) rotate(2.5deg);transform-origin:bottom left;animation:chIn .85s var(--ease) forwards;animation-delay:calc(var(--d0,0s) + var(--i)*.034s)}
+@keyframes chIn{to{opacity:1;transform:translateY(0) rotate(0)}}
+.eyebrow{display:flex;align-items:center;gap:16px;font:500 11px 'Jost';letter-spacing:.26em;text-transform:uppercase;color:var(--ink)}
+.eyebrow .rule{width:44px;height:1px;background:var(--rose-deep);flex:none}
+.eyebrow em{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--rose-deep);letter-spacing:0;text-transform:none;font-size:15px}
+.hero-title{margin-top:26px;font-size:clamp(58px,8.6vw,138px);line-height:.94;letter-spacing:.005em;font-weight:400}
+.hero-title .line{display:block}
+.hero-title .it{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:.94em;letter-spacing:0;margin-left:.06em}
+.hero-sub{margin-top:30px;max-width:44ch;font-size:15.5px;color:var(--muted);font-weight:300}
+.hero-cta{display:flex;align-items:center;gap:30px;margin-top:42px;flex-wrap:wrap}
+.hero-meta{display:flex;gap:34px;margin-top:52px;padding-top:24px;border-top:1px solid var(--line)}
+.hero-meta div{display:flex;flex-direction:column;gap:4px}
+.hero-meta strong{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:500;line-height:1}
+.hero-meta span{font:400 10px 'Jost';letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.hero-visual{position:relative;justify-self:end;width:100%;max-width:520px}
+.hv-main{position:relative;width:min(82%,440px);margin-left:auto;background:#fff;padding:12px;border:1px solid var(--line);box-shadow:0 40px 70px -46px rgba(168,93,128,.5)}
+.hv-main .frame{display:block;overflow:hidden;position:relative;animation:floaty 7s ease-in-out infinite}
+.hv-sub .frame{animation:floaty 8.5s ease-in-out .9s infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+.hv-main .frame::before{content:"";display:block;padding-top:124%}
+.hv-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hv-sub{position:absolute;left:-9%;bottom:-7%;width:42%;background:#fff;padding:9px;border:1px solid var(--line);box-shadow:0 28px 50px -34px rgba(168,93,128,.48);z-index:2}
+.hv-sub .frame{position:relative;display:block;overflow:hidden}
+.hv-sub .frame::before{content:"";display:block;padding-top:120%}
+.hv-sub img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hv-logos{position:absolute;top:-27px;right:16%;display:flex;z-index:3;animation:floaty 9s ease-in-out .4s infinite}
+.hv-logos img{width:70px;height:70px;border-radius:50%;object-fit:cover;background:#fff;border:1px solid var(--line);padding:3px;box-shadow:0 14px 30px -18px rgba(168,93,128,.5)}
+.hv-logos img + img{margin-left:-16px}
+.hv-caption{margin-top:26px;text-align:right;font:400 10.5px 'Jost';letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:940px){
+  .hero-in{grid-template-columns:1fr;min-height:0;padding-top:44px;padding-bottom:26px;gap:54px}
+  .hero-title{font-size:clamp(52px,14.5vw,88px)}
+  .hero-visual{justify-self:center;max-width:440px}
+  .hv-sub{left:-4%}
+  .hv-logos{right:6%}
+  .hero-meta{gap:24px;flex-wrap:wrap}
+}
+
+/* ============ MARQUEE ============ */
+.marquee{border-block:1px solid var(--line);background:#fff;overflow:hidden;padding:16px 0}
+.marquee-track{display:flex;width:max-content;animation:mq 46s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.mq-set{display:flex;align-items:center;gap:52px;padding-right:52px}
+.mq-item{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(19px,2.1vw,24px);white-space:nowrap;color:var(--ink)}
+.mq-item.alt{font-family:'Jost',sans-serif;font-style:normal;font-weight:400;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.mq-dot{font-family:'Cormorant Garamond',serif;color:var(--rose);font-size:18px}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ============ SECTION HEADERS ============ */
+.section{padding-block:clamp(76px,9vw,132px)}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;margin-bottom:clamp(40px,5vw,64px);flex-wrap:wrap}
+.sec-head .kick{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.sec-head .kick::before{content:"";width:34px;height:1px;background:var(--rose-deep)}
+.sec-title{font-family:'Italiana',serif;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:1.04;letter-spacing:.01em}
+.sec-title .ita{font-size:.92em}
+
+/* ============ BRANDS ============ */
+.brands{background:var(--bg)}
+.brand-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(18px,2.4vw,32px)}
+.brand-card{background:#fff;border:1px solid var(--line);padding:clamp(38px,4.6vw,66px) clamp(26px,3.4vw,52px);text-align:center}
+.brand-card:hover{border-color:var(--pink-300);box-shadow:0 34px 60px -42px rgba(168,93,128,.45)}
+.bc-logo{width:150px;height:150px;margin:0 auto;border-radius:50%;overflow:hidden;border:1px solid var(--line);background:var(--pink-50);padding:5px;transition:transform .6s var(--ease)}
+.brand-card:hover .bc-logo{transform:scale(1.05) rotate(2deg)}
+.bc-logo img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.brand-card h3{margin-top:28px;font-family:'Italiana',serif;font-weight:400;font-size:clamp(24px,2.6vw,32px);letter-spacing:.1em}
+.brand-card .bc-sub{display:block;margin-top:8px;font:500 10.5px 'Jost';letter-spacing:.24em;text-transform:uppercase;color:var(--rose-deep)}
+.brand-card p{margin:20px auto 0;max-width:36ch;color:var(--muted);font-size:14.5px}
+@media (max-width:760px){.brand-grid{grid-template-columns:1fr}}
+
+/* ============ THE EDIT ============ */
+.edit{background:var(--lav-50);border-block:1px solid var(--line)}
+.edit-in{display:grid;grid-template-columns:300px 1fr;gap:clamp(34px,4.5vw,72px);align-items:start}
+.edit-aside{position:sticky;top:120px}
+.edit-aside .sec-title{margin-top:16px}
+.edit-aside p{margin-top:18px;color:var(--muted);font-size:14.5px;max-width:30ch}
+.edit-aside .link-arrow{margin-top:26px}
+.edit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,1.8vw,24px)}
+@media (max-width:1100px){.edit-in{grid-template-columns:1fr}.edit-aside{position:static}.edit-aside p{max-width:60ch}}
+@media (max-width:680px){.edit-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ============ CATEGORIES ============ */
+.cats{background:var(--pink-50);border-bottom:1px solid var(--line)}
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:clamp(12px,1.6vw,20px)}
+.cat-tile{background:#fff;border:1px solid var(--line);text-align:left;display:flex;flex-direction:column;cursor:pointer;height:100%;width:100%;padding:0}
+.cat-tile:hover{border-color:var(--pink-300);box-shadow:0 26px 46px -34px rgba(168,93,128,.5)}
+.ct-media{position:relative;display:block;overflow:hidden;background:var(--pink-50)}
+.ct-media::before{content:"";display:block;padding-top:118%}
+.ct-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--ease)}
+.cat-tile:hover .ct-media img{transform:scale(1.07)}
+.ct-arrow{position:absolute;right:10px;bottom:10px;width:32px;height:32px;border-radius:50%;background:#fff;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s var(--ease),background .3s,color .3s;z-index:2}
+.ct-arrow svg{width:14px;height:14px}
+.cat-tile:hover .ct-arrow{opacity:1;transform:none;background:var(--ink);color:#fff;border-color:var(--ink)}
+.ct-info{display:block;padding:14px 16px;border-top:1px solid var(--line);background:#fff}
+.ct-info strong{display:block;font:500 12px 'Jost';letter-spacing:.12em;text-transform:uppercase;color:var(--ink)}
+.ct-info em{display:block;margin-top:3px;font:400 10px 'Jost';font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+
+/* ============ PRODUCT CARD ============ */
+.card{background:#fff;border:1px solid var(--line);display:flex;flex-direction:column;height:100%}
+.card:hover{border-color:var(--pink-300);box-shadow:0 30px 54px -38px rgba(168,93,128,.5)}
+.card-media{position:relative;flex:1 1 auto;overflow:hidden;background:var(--pink-50);cursor:pointer;display:block}
+.card-media::before{content:"";display:block;padding-top:125%}
+.card-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),opacity .28s ease}
+.card:hover .card-media img{transform:scale(1.045)}
+.card-no{position:absolute;top:12px;left:12px;z-index:2;background:rgba(255,255,255,.92);border:1px solid var(--line);padding:5px 10px;font:500 10px 'Jost';letter-spacing:.16em;color:var(--ink)}
+.card-setbadge{position:absolute;top:12px;right:12px;z-index:2;background:var(--plum);color:#fff;padding:5px 10px;font:500 9px 'Jost';letter-spacing:.18em}
+.card-qv{position:absolute;left:12px;bottom:12px;z-index:2;background:rgba(255,255,255,.94);border:1px solid var(--line);padding:9px 16px;font:500 10px 'Jost';letter-spacing:.2em;text-transform:uppercase;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s var(--ease)}
+.card:hover .card-qv{opacity:1;transform:none}
+.cyc{position:absolute;top:50%;transform:translateY(-50%);width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.94);border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;z-index:2;opacity:0;transition:opacity .3s,background .3s,color .3s}
+.cyc svg{width:14px;height:14px}
+.cyc.prev{left:10px}.cyc.next{right:10px}
+.cyc:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.cyc-dots{position:absolute;bottom:10px;left:0;right:0;display:flex;justify-content:center;gap:5px;z-index:2;opacity:0;transition:opacity .3s;pointer-events:none}
+.cyc-dot{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.9);transition:background .3s,transform .3s}
+.cyc-dot.on{background:var(--rose-deep);transform:scale(1.4)}
+.card:hover .cyc,.card:hover .cyc-dots{opacity:1}
+@media (hover:none){.cyc{opacity:1}.cyc-dots{opacity:1}.card-qv{display:none}}
+@media (max-width:680px){.card-no{top:9px;left:9px}.card-setbadge{top:9px;right:9px}}
+.card-info{padding:15px 17px 15px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-top:1px solid var(--line)}
+.card-info h3{font:500 12.5px 'Jost';letter-spacing:.1em;text-transform:uppercase;font-weight:500}
+.card-members{margin-top:4px;font:400 9.5px 'Jost';letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.card-price{font:500 13.5px 'Jost';color:var(--rose-deep);white-space:nowrap}
+.card-price.req{font:400 10.5px 'Jost';letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.card-actions{display:flex;border-top:1px solid var(--line)}
+.card-actions button{flex:1;height:44px;display:inline-flex;align-items:center;justify-content:center;gap:8px;font:500 10px 'Jost';letter-spacing:.14em;text-transform:uppercase;position:relative;overflow:hidden;transition:background .3s,color .3s;white-space:nowrap}
+.card-actions button svg{width:13px;height:13px;stroke-width:1.7}
+.card-actions button + button{border-left:1px solid var(--line)}
+.card-actions button::after{content:"";position:absolute;top:0;left:-75%;width:40%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);transition:left .6s ease;pointer-events:none}
+.card-actions button:hover::after{left:135%}
+.ca-add{color:var(--ink);background:#fff}
+.ca-add:hover{background:var(--pink-100)}
+.ca-add.added{background:var(--pink-200);color:var(--rose-deep)}
+.ca-buy{background:var(--ink);color:#fff}
+.ca-buy:hover{background:var(--rose-deep)}
+@media (max-width:680px){.card-info{padding:12px 13px 13px;flex-direction:column;gap:5px;align-items:flex-start}.card-actions button{height:42px;letter-spacing:.1em;font-size:9.5px}}
+
+/* ============ SHOP ============ */
+.shop{background:var(--bg)}
+.shop-head{text-align:center;max-width:640px;margin:0 auto clamp(36px,4.4vw,56px)}
+.shop-head .tag{display:block;margin-bottom:16px}
+.shop-head p{margin-top:16px;color:var(--muted)}
+.toolbar{display:flex;align-items:flex-end;justify-content:space-between;gap:26px;flex-wrap:wrap;padding-bottom:22px;border-bottom:1px solid var(--line)}
+.searchbox{flex:1 1 240px;max-width:360px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);padding-bottom:10px;transition:border-color .3s}
+.searchbox:focus-within{border-color:var(--ink)}
+.searchbox svg{width:16px;height:16px;stroke-width:1.6;color:var(--muted);flex:none}
+.searchbox input{flex:1;border:0;outline:0;background:transparent;font:400 14px 'Jost';letter-spacing:.04em;min-width:0}
+.searchbox input::placeholder{color:var(--muted)}
+.filters{display:flex;gap:clamp(14px,1.8vw,24px);flex-wrap:nowrap;overflow-x:auto;padding-bottom:10px;scrollbar-width:none;-ms-overflow-style:none;max-width:100%}
+.filters::-webkit-scrollbar{display:none}
+.fbtn{font:500 11px 'Jost';letter-spacing:.18em;text-transform:uppercase;color:var(--muted);padding:0 0 6px;position:relative;transition:color .3s;white-space:nowrap;flex:none}
+.fbtn::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:1px;background:var(--ink);transform:scaleX(0);transition:transform .35s var(--ease)}
+.fbtn:hover{color:var(--ink)}
+.fbtn.on{color:var(--rose-deep)}
+.fbtn.on::after{transform:scaleX(1);background:var(--rose-deep)}
+.sortbox{display:flex;align-items:center;gap:10px;padding-bottom:10px}
+.sortbox label{font:400 10px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.sortsel{position:relative}
+.sortsel select{appearance:none;-webkit-appearance:none;border:1px solid var(--line);background:#fff;height:38px;padding:0 36px 0 14px;font:500 11px 'Jost';letter-spacing:.12em;text-transform:uppercase;outline:0;cursor:pointer;transition:border-color .3s}
+.sortsel select:hover{border-color:var(--pink-300)}
+.sortsel svg{position:absolute;right:12px;top:50%;transform:translateY(-50%);width:12px;height:12px;pointer-events:none;color:var(--muted)}
+.countline{margin-top:16px;font:400 10.5px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.shop-grid{margin-top:26px;display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media (min-width:768px){
+  .shop-grid{grid-template-columns:repeat(3,1fr);gap:22px}
+  .tile-lg{grid-column:span 2;grid-row:span 2}
+}
+@media (min-width:1120px){.shop-grid{grid-template-columns:repeat(4,1fr);gap:26px}}
+@media (max-width:767px){.tile-lg{grid-column:span 2}}
+.shop-empty{padding:80px 20px;text-align:center;border:1px dashed var(--line);margin-top:26px;background:#fff}
+.shop-empty .t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(26px,4vw,34px)}
+.shop-empty p{margin-top:10px;color:var(--muted)}
+.shop-empty .btn{margin-top:26px}
+.loadmore{margin-top:48px;text-align:center}
+.loadmore .hint{display:block;margin-top:14px;font:400 10.5px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+
+/* ============ CTA BAND ============ */
+.band{background:var(--lav-100);border-block:1px solid var(--line);text-align:center;padding-block:clamp(66px,8vw,110px);position:relative;overflow:hidden}
+.band .orb{width:340px;height:340px;background:#F6D7E6;opacity:.55;top:-140px;left:12%}
+.band .orb.o2{width:300px;height:300px;background:#DCCBF2;top:auto;left:auto;bottom:-130px;right:10%}
+.band-in{position:relative;z-index:1}
+.band .t{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(28px,4.4vw,48px);line-height:1.2;max-width:22ch;margin:0 auto}
+.band .tag{display:block;margin-bottom:20px}
+.band .btn{margin-top:34px}
+
+/* ============ ABOUT ============ */
+.about{background:var(--pink-25)}
+.about-intro{max-width:660px;margin:0 auto;text-align:center}
+.about-intro .serif{font-size:clamp(28px,3.8vw,44px);line-height:1.25;margin-top:16px;display:block;font-weight:400}
+.about-intro p{margin-top:22px;color:var(--muted)}
+.values{margin-top:clamp(48px,6vw,72px);display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(30px,4vw,56px)}
+.value{border-top:1px solid var(--line);padding-top:20px;transition:transform .5s var(--ease)}
+.value:hover{transform:translateY(-5px)}
+.value i{font:500 11px 'Jost';letter-spacing:.22em;color:var(--rose-deep);font-style:normal}
+.value h4{margin-top:14px;font-family:'Italiana',serif;font-weight:400;font-size:22px;letter-spacing:.06em}
+.value p{margin-top:10px;color:var(--muted);font-size:14px}
+@media (max-width:820px){.values{grid-template-columns:1fr;gap:28px}}
+
+/* ============ CONTACT ============ */
+.contact{background:var(--lav-50);border-top:1px solid var(--line)}
+.contact-in{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,90px);align-items:center}
+.contact h2{font-family:'Italiana',serif;font-weight:400;font-size:clamp(34px,4.8vw,58px);line-height:1.06;margin-top:16px}
+.steps{margin-top:38px;display:flex;flex-direction:column;gap:0}
+.step{display:flex;gap:20px;padding:19px 0;border-top:1px solid var(--line);align-items:baseline;transition:padding-left .4s var(--ease)}
+.step:hover{padding-left:8px}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step i{font:500 10.5px 'Jost';letter-spacing:.2em;color:var(--rose-deep);font-style:normal;flex:none;width:32px}
+.step p{font-size:14.5px}
+.step p strong{font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:12.5px;display:block;margin-bottom:3px}
+.order-card{background:#fff;border:1px solid var(--line);padding:clamp(32px,4vw,52px);text-align:center;box-shadow:0 34px 64px -46px rgba(122,91,150,.5)}
+.order-card .tag{display:block}
+.order-card .tel{display:block;margin-top:18px;font-family:'Italiana',serif;font-size:clamp(38px,4.6vw,54px);line-height:1;letter-spacing:.05em;transition:color .3s}
+.order-card .tel:hover{color:var(--rose-deep)}
+.order-card .intl{display:block;margin-top:10px;font:400 11.5px 'Jost';letter-spacing:.2em;color:var(--muted)}
+.order-card .btn{width:100%;justify-content:center;margin-top:30px}
+.order-card .call-link{display:inline-block;margin-top:18px;font:500 11px 'Jost';letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:5px;transition:border-color .3s,color .3s}
+.order-card .call-link:hover{color:var(--rose-deep);border-color:var(--rose-deep)}
+@media (max-width:900px){.contact-in{grid-template-columns:1fr}}
+
+/* ============ FOOTER ============ */
+.footer{background:var(--plum-deep);color:#F4E9F2}
+.footer-in{padding-block:clamp(52px,6vw,80px) 30px}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:clamp(34px,5vw,80px)}
+.footer-brand .fb-logos{display:flex;align-items:center;gap:12px}
+.footer-brand .fb-logos img{width:46px;height:46px;border-radius:50%;object-fit:cover;border:1px solid rgba(244,233,242,.3);padding:2px;background:#fff}
+.footer-brand h3{margin-top:18px;font-family:'Italiana',serif;font-weight:400;font-size:24px;letter-spacing:.12em}
+.footer-brand h3 em{font-family:'Cormorant Garamond',serif;font-style:italic;color:#E3A9BE;letter-spacing:0}
+.footer-brand p{margin-top:12px;color:#C9B4CC;font-size:13.5px;max-width:34ch}
+.footer h5{font:500 10.5px 'Jost';letter-spacing:.26em;text-transform:uppercase;color:#B9A0C0;margin-bottom:20px}
+.footer-col a{display:block;padding:6px 0;font-size:13.5px;color:#EADCEC;transition:color .3s,padding-left .3s;width:max-content}
+.footer-col a:hover{color:#E3A9BE;padding-left:6px}
+.footer-bottom{margin-top:clamp(40px,5vw,60px);padding-top:24px;border-top:1px solid rgba(244,233,242,.16);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.footer-bottom span{font:400 10.5px 'Jost';letter-spacing:.18em;text-transform:uppercase;color:#B9A0C0}
+@media (max-width:820px){.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}}
+@media (max-width:520px){.footer-grid{grid-template-columns:1fr}}
+
+/* ============ QUICK VIEW ============ */
+.qv{position:fixed;inset:0;z-index:95;display:grid;place-items:center;padding:20px;visibility:hidden;transition:visibility 0s .5s}
+.qv.open{visibility:visible;transition:visibility 0s}
+.qv-backdrop{position:absolute;inset:0;background:rgba(58,43,64,.48);opacity:0;transition:opacity .4s;backdrop-filter:blur(3px)}
+.qv.open .qv-backdrop{opacity:1}
+.qv-panel{position:relative;width:min(960px,100%);max-height:92vh;overflow:auto;background:#fff;border:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;opacity:0;transform:translateY(30px) scale(.97) rotateX(4deg);transform-origin:top center;transition:opacity .45s,transform .55s var(--ease);perspective:1200px}
+.qv.open .qv-panel{opacity:1;transform:none}
+.qv-close{position:absolute;top:14px;right:14px;z-index:3;width:42px;height:42px;background:#fff;border:1px solid var(--line);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:background .3s,color .3s,transform .3s}
+.qv-close:hover{background:var(--ink);color:#fff;transform:rotate(90deg)}
+.qv-close svg{width:16px;height:16px;stroke-width:1.6}
+.qv-media{position:relative;background:var(--pink-50);min-height:340px}
+.qv-media::before{content:"";display:block;padding-top:125%}
+.qv-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .25s ease}
+.qv-info{padding:clamp(30px,4vw,54px);display:flex;flex-direction:column}
+.qv-info .tag{color:var(--rose-deep)}
+.qv-info h3{margin-top:14px;font-family:'Italiana',serif;font-weight:400;font-size:clamp(30px,3.4vw,42px);letter-spacing:.03em}
+.qv-price-row{margin-top:12px;font:500 18px 'Jost';letter-spacing:.06em}
+.qv-price-row .req{font:400 11px 'Jost';letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.qv-desc{margin-top:16px;color:var(--muted);font-size:14px}
+.qv-thumbs{position:absolute;left:12px;bottom:12px;z-index:2;display:flex;gap:7px;flex-wrap:wrap;max-width:calc(100% - 24px)}
+.qv-thumb{width:52px;height:52px;border:1px solid #fff;background:#fff;padding:2px;cursor:pointer;opacity:.75;transition:opacity .3s,border-color .3s,transform .3s;flex:none;box-shadow:0 6px 16px rgba(55,40,51,.2)}
+.qv-thumb img{width:100%;height:100%;object-fit:cover}
+.qv-thumb:hover{transform:translateY(-3px)}
+.qv-thumb.on{opacity:1;border-color:var(--rose-deep)}
+.qv-members{margin-top:14px;padding:11px 15px;background:var(--pink-50);border-left:2px solid var(--rose);font:400 10.5px 'Jost';letter-spacing:.14em;text-transform:uppercase;color:var(--rose-deep);line-height:1.7}
+.qv-qty{margin-top:26px;display:inline-flex;align-items:center;border:1px solid var(--line);width:max-content}
+.qv-qty button{width:44px;height:46px;display:inline-flex;align-items:center;justify-content:center;transition:background .3s}
+.qv-qty button:hover{background:var(--pink-50)}
+.qv-qty button svg{width:14px;height:14px;stroke-width:1.7}
+.qv-qty span{min-width:44px;text-align:center;font:500 14px 'Jost'}
+.qv-qty-label{display:block;margin-top:26px;margin-bottom:-18px;font:400 10px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.qv-actions{margin-top:24px;display:flex;flex-direction:column;gap:12px}
+.qv-actions .btn{justify-content:center;width:100%}
+.qv-notes{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);list-style:none;display:flex;flex-direction:column;gap:9px}
+.qv-notes li{display:flex;gap:10px;align-items:center;font-size:12.5px;color:var(--muted);letter-spacing:.04em}
+.qv-notes li svg{width:13px;height:13px;color:var(--rose-deep);stroke-width:1.7;flex:none}
+.qv-unpriced-note{display:none;margin-top:14px;padding:12px 16px;background:var(--lav-100);font:400 11px 'Jost';letter-spacing:.14em;text-transform:uppercase;color:var(--plum)}
+.qv.unpriced .qv-unpriced-note{display:block}
+.qv.unpriced #qvAdd{display:none}
+@media (max-width:760px){.qv-panel{grid-template-columns:1fr}.qv-media::before{padding-top:100%}}
+
+/* ============ CART DRAWER ============ */
+.scrim{position:fixed;inset:0;z-index:80;background:rgba(58,43,64,.42);opacity:0;visibility:hidden;transition:opacity .4s,visibility 0s .4s;backdrop-filter:blur(2px)}
+.scrim.show{opacity:1;visibility:visible;transition:opacity .4s}
+.drawer{position:fixed;top:0;right:0;bottom:0;z-index:85;width:min(440px,100%);background:#FFF9FC;border-left:1px solid var(--line);display:flex;flex-direction:column;transform:translateX(102%);transition:transform .55s var(--ease)}
+.drawer.open{transform:none}
+.drawer-head{display:flex;align-items:center;justify-content:space-between;padding:22px 26px;border-bottom:1px solid var(--line);background:var(--pink-100)}
+.drawer-head h3{font-family:'Italiana',serif;font-weight:400;font-size:24px;letter-spacing:.08em}
+.drawer-head h3 span{font-family:'Jost';font-size:11px;letter-spacing:.2em;color:var(--muted);margin-left:8px}
+.drawer-head .qv-close{position:static}
+.bag-items{flex:1;overflow-y:auto;padding:10px 26px}
+.bag-item{display:grid;grid-template-columns:74px 1fr auto;gap:16px;padding:20px 0;border-bottom:1px solid var(--line);align-items:center;animation:bagIn .45s var(--ease)}
+@keyframes bagIn{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+.bi-media{width:74px;height:92px;background:var(--pink-50);border:1px solid var(--line);overflow:hidden}
+.bi-media img{width:100%;height:100%;object-fit:cover}
+.bi-info h4{font:500 12px 'Jost';letter-spacing:.1em;text-transform:uppercase}
+.bi-info .bi-unit{margin-top:3px;font:400 11.5px 'Jost';color:var(--muted);letter-spacing:.06em}
+.bi-qty{margin-top:12px;display:inline-flex;align-items:center;border:1px solid var(--line);background:#fff}
+.bi-qty button{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;transition:background .3s}
+.bi-qty button:hover{background:var(--pink-50)}
+.bi-qty button svg{width:11px;height:11px;stroke-width:1.8}
+.bi-qty span{min-width:30px;text-align:center;font:500 12.5px 'Jost'}
+.bi-right{display:flex;flex-direction:column;align-items:flex-end;gap:12px}
+.bi-total{font:500 13.5px 'Jost';letter-spacing:.05em}
+.bi-del{color:var(--muted);transition:color .3s,transform .3s;display:inline-flex}
+.bi-del:hover{color:var(--rose-deep);transform:scale(1.15)}
+.bi-del svg{width:15px;height:15px;stroke-width:1.6}
+.bag-empty{padding:70px 10px;text-align:center}
+.bag-empty .t{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:30px}
+.bag-empty p{margin-top:10px;color:var(--muted);font-size:13px}
+.bag-empty .btn{margin-top:28px}
+.drawer-foot{border-top:1px solid var(--line);padding:22px 26px 26px;background:var(--lav-100)}
+.subrow{display:flex;justify-content:space-between;align-items:baseline}
+.subrow span{font:400 11px 'Jost';letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.subrow strong{font:500 20px 'Jost';letter-spacing:.04em}
+.drawer-note{margin-top:8px;font-size:11.5px;color:var(--muted);letter-spacing:.04em}
+.drawer-foot .btn{width:100%;justify-content:center;margin-top:18px}
+.drawer-call{display:block;text-align:center;margin-top:14px;font:400 11px 'Jost';letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.drawer-call a{border-bottom:1px solid var(--line);padding-bottom:3px;color:var(--ink);transition:color .3s,border-color .3s}
+.drawer-call a:hover{color:var(--rose-deep);border-color:var(--rose-deep)}
+
+/* ============ TOAST / TOTOP ============ */
+.toast{position:fixed;left:50%;bottom:26px;z-index:100;transform:translate(-50%,20px);background:var(--plum-deep);color:#F4E9F2;display:flex;align-items:center;gap:18px;padding:14px 22px;opacity:0;visibility:hidden;transition:opacity .4s,transform .4s var(--ease),visibility 0s .4s;max-width:min(92vw,480px);border:1px solid rgba(244,233,242,.2)}
+.toast.show{opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .4s,transform .4s var(--ease)}
+.toast span{font:400 12.5px 'Jost';letter-spacing:.08em}
+.toast button{font:500 10.5px 'Jost';letter-spacing:.2em;text-transform:uppercase;color:#E3A9BE;border-bottom:1px solid #E3A9BE;padding-bottom:2px;flex:none}
+.to-top{position:fixed;left:24px;bottom:24px;z-index:70;width:46px;height:46px;border-radius:50%;background:#fff;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:center;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .4s,transform .4s var(--ease),background .3s,color .3s,visibility 0s .4s;box-shadow:0 14px 28px -16px rgba(168,93,128,.4)}
+.to-top.show{opacity:1;visibility:visible;transform:none;transition:opacity .4s,transform .4s var(--ease),background .3s,color .3s}
+.to-top:hover{background:var(--ink);color:#fff}
+.to-top svg{width:16px;height:16px;stroke-width:1.6}
+
+/* ============ CLICK / PRESS ANIMATIONS ============ */
+.btn:active,.link-arrow:active{transform:scale(.965)}
+.card-actions button:active{transform:scale(.94)}
+.fbtn:active{transform:translateY(1px)}
+.icon-btn:active,.qv-close:active{transform:scale(.88)}
+.cyc:active{transform:translateY(-50%) scale(.84)}
+.qv-thumb:active{transform:scale(.84)}
+.to-top:active{transform:scale(.9)}
+.mmenu-close:active{transform:scale(.88)}
+.cat-tile{overflow:hidden}
+.cat-tile:active{transform:scale(.982)}
+.sortsel select:active{transform:scale(.97)}
+.card-media:active img{transform:scale(1.02)}
+.ripple{position:absolute;border-radius:50%;background:radial-gradient(circle,rgba(201,133,161,.34) 0%,rgba(201,133,161,.14) 46%,transparent 72%);transform:scale(0);animation:rip .7s ease-out forwards;pointer-events:none;z-index:5}
+@keyframes rip{to{transform:scale(2.4);opacity:0}}
+.cyc,.qv-thumb,.qv-close,.qv-qty button,.bi-qty button,.fbtn,.mmenu-close{position:relative;overflow:hidden}
+.to-top{overflow:hidden}
+</style>
+<noscript><style>.rv{opacity:1!important;transform:none!important}.hero [data-a]{opacity:1!important;transform:none!important;animation:none!important}#preloader{display:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-logos">
+      <img src="https://i.imgur.com/3uT6Lfu.jpeg" alt="ROSELLE logo">
+      <img src="https://i.imgur.com/rJiv0TG.jpeg" alt="CENT OF YAS logo">
+    </div>
+    <div class="pre-word"><span style="--i:0">R</span><span style="--i:1">O</span><span style="--i:2">S</span><span style="--i:3">E</span><span style="--i:4">L</span><span style="--i:5">L</span><span style="--i:6">E</span></div>
+    <p class="pre-sub">× Cent of Yas</p>
+    <div class="pre-bar"><i></i></div>
+  </div>
+</div>
+
+<!-- ANNOUNCEMENT -->
+<div class="announce">
+  <div class="container announce-in"><span id="annText">Complimentary delivery on orders over $50</span></div>
+</div>
+
+<!-- NAVIGATION -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-in">
+    <button class="nav-burger" id="burger" aria-label="Open menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="15" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+    </button>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#brand-roselle">Roselle</a>
+      <a href="#brand-coy">Cent of Yas</a>
+      <a href="#shop">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-brand" href="#home" aria-label="Roselle and Cent of Yas — home">
+      <span>ROSELLE</span><span class="bx">×</span><span>CENT OF YAS</span>
+    </a>
+    <div class="nav-actions">
+      <button class="icon-btn" id="navSearch" aria-label="Search products">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+      </button>
+      <button class="icon-btn nav-bag" id="openBag" aria-label="Open shopping bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        <span class="bag-count" id="bagCount">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <div class="mmenu-top">
+    <span class="tag">Menu</span>
+    <button class="mmenu-close" id="mmenuClose" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+  <nav class="mmenu-nav" aria-label="Mobile">
+    <a href="#brand-roselle"><i>01</i>Roselle</a>
+    <a href="#brand-coy"><i>02</i>Cent of Yas</a>
+    <a href="#shop"><i>03</i>Shop</a>
+    <a href="#categories"><i>04</i>Categories</a>
+    <a href="#edit"><i>05</i>The Edit</a>
+    <a href="#about"><i>06</i>About</a>
+    <a href="#contact"><i>07</i>Contact</a>
+  </nav>
+  <div class="mmenu-foot">
+    <div class="mmenu-brands">
+      <img src="https://i.imgur.com/3uT6Lfu.jpeg" alt="ROSELLE logo">
+      <img src="https://i.imgur.com/rJiv0TG.jpeg" alt="CENT OF YAS logo">
+      <span>Roselle × Cent of Yas</span>
+    </div>
+    <a class="link-arrow wa-general" href="#" target="_blank" rel="noopener">WhatsApp
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+    </a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+  <div class="container hero-in">
+    <div class="hero-copy">
+      <p class="eyebrow" data-a style="--d:.05s"><span class="rule"></span>Roselle <em>×</em> Cent of Yas</p>
+      <h1 class="hero-title">
+        <span class="line serif split" style="--d0:.15s">BEAUTY,</span>
+        <span class="line it split" style="--d0:.42s">Redefined.</span>
+      </h1>
+      <p class="hero-sub" data-a style="--d:.62s">Two houses. One destination. A curated edit of flowers, beauty, gifts and self-care — chosen piece by piece, and delivered to your door with a single message.</p>
+      <div class="hero-cta" data-a style="--d:.74s">
+        <a href="#shop" class="btn btn-solid">Explore the Collection
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+        </a>
+        <a href="#" class="link-arrow wa-general" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" style="width:15px;height:15px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+          Order via WhatsApp
+        </a>
+      </div>
+      <div class="hero-meta" data-a style="--d:.86s">
+        <div><strong class="count" id="mPieces" data-count="0">0</strong><span>Curated pieces</span></div>
+        <div><strong class="count" id="mCats" data-count="0">0</strong><span>Categories</span></div>
+        <div><strong>+961</strong><span>71 566 129</span></div>
+      </div>
+    </div>
+    <div class="hero-visual" data-a style="--d:.3s">
+      <div class="hv-logos">
+        <img src="https://i.imgur.com/3uT6Lfu.jpeg" alt="ROSELLE logo">
+        <img src="https://i.imgur.com/rJiv0TG.jpeg" alt="CENT OF YAS logo">
+      </div>
+      <figure class="hv-main par" data-speed="0.05">
+        <span class="frame"><img src="https://i.imgur.com/cGDyHcq.jpeg" alt="Product 05 from the collection"></span>
+      </figure>
+      <figure class="hv-sub par" data-speed="-0.035">
+        <span class="frame"><img src="https://i.imgur.com/aAvdex5.jpeg" alt="Product 21 from the collection"></span>
+      </figure>
+      <p class="hv-caption">The Collection — Roselle × Cent of Yas</p>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="mq-set">
+      <span class="mq-item">Roselle</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Cent of Yas</span><span class="mq-dot">·</span>
+      <span class="mq-item">Flowers &amp; gifts</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Sets — Makeup — Mugs</span><span class="mq-dot">·</span>
+      <span class="mq-item">Beauty, redefined</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Order via WhatsApp</span><span class="mq-dot">·</span>
+    </div>
+    <div class="mq-set">
+      <span class="mq-item">Roselle</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Cent of Yas</span><span class="mq-dot">·</span>
+      <span class="mq-item">Flowers &amp; gifts</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Sets — Makeup — Mugs</span><span class="mq-dot">·</span>
+      <span class="mq-item">Beauty, redefined</span><span class="mq-dot">·</span>
+      <span class="mq-item alt">Order via WhatsApp</span><span class="mq-dot">·</span>
+    </div>
+  </div>
+</div>
+
+<!-- BRANDS -->
+<section class="section brands" id="brands">
+  <div class="container">
+    <div class="sec-head rv">
+      <div>
+        <p class="tag kick">The Houses</p>
+        <h2 class="sec-title">TWO HOUSES, <span class="ita">one</span> SIGNATURE.</h2>
+      </div>
+      <a href="#shop" class="link-arrow">Shop all pieces
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+    </div>
+    <div class="brand-grid">
+      <article class="brand-card tilt rv" id="brand-roselle">
+        <div class="bc-logo"><img src="https://i.imgur.com/3uT6Lfu.jpeg" alt="ROSELLE logo" loading="lazy"></div>
+        <h3>ROSELLE</h3>
+        <span class="bc-sub">The House of Quiet Luxury</span>
+        <p>Timeless essentials for the everyday ritual — soft, considered, and chosen with care.</p>
+      </article>
+      <article class="brand-card tilt rv" id="brand-coy" style="transition-delay:.08s">
+        <div class="bc-logo"><img src="https://i.imgur.com/rJiv0TG.jpeg" alt="CENT OF YAS logo" loading="lazy"></div>
+        <h3>CENT OF YAS</h3>
+        <span class="bc-sub">The House of Expression</span>
+        <p>Colour, character and confidence — statement beauty with a modern, feminine edge.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- THE EDIT (FEATURED) -->
+<section class="section edit" id="edit">
+  <div class="container edit-in">
+    <aside class="edit-aside rv">
+      <p class="tag kick" style="display:flex;align-items:center;gap:14px"><span style="width:34px;height:1px;background:var(--rose-deep);display:inline-block"></span>Selection № 01</p>
+      <h2 class="sec-title">The <span class="ita">Edit.</span></h2>
+      <p>Six pieces we keep reaching for — a short list of quiet favourites from the collection.</p>
+      <a href="#shop" class="link-arrow">View all pieces
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+    </aside>
+    <div class="edit-grid" id="editGrid"></div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="section cats" id="categories">
+  <div class="container">
+    <div class="sec-head rv">
+      <div>
+        <p class="tag kick">Shop by Category</p>
+        <h2 class="sec-title">FIND YOUR <span class="ita">ritual.</span></h2>
+      </div>
+      <a href="#shop" class="link-arrow">Browse everything
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg>
+      </a>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<!-- SHOP -->
+<section class="section shop" id="shop">
+  <div class="container">
+    <div class="shop-head rv">
+      <span class="tag">The Collection</span>
+      <h2 class="sec-title">EVERY <span class="ita">piece.</span></h2>
+      <p>Browse the full edit. Tap any piece for details — order the whole bag in one WhatsApp message.</p>
+    </div>
+    <div class="toolbar rv">
+      <div class="searchbox">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.5" y2="16.5"/></svg>
+        <input type="text" id="searchInput" placeholder="Search by number or category" aria-label="Search products" autocomplete="off">
+      </div>
+      <div class="filters" id="filters" role="tablist" aria-label="Categories"></div>
+      <div class="sortbox">
+        <label for="sortSelect">Sort</label>
+        <div class="sortsel">
+          <select id="sortSelect" aria-label="Sort products">
+            <option value="curated">Curated</option>
+            <option value="num-desc">№ Desc</option>
+            <option value="price-asc">Price · Low</option>
+            <option value="price-desc">Price · High</option>
+          </select>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+      </div>
+    </div>
+    <p class="countline" id="countLine"></p>
+    <div class="shop-grid" id="shopGrid"></div>
+    <div class="shop-empty" id="shopEmpty" hidden>
+      <p class="t">No pieces found.</p>
+      <p>Try another number, or message us — we will find it for you.</p>
+      <button class="btn btn-line" id="resetFilters">Clear search & filters</button>
+    </div>
+    <div class="loadmore" id="loadMoreWrap">
+      <button class="btn btn-line" id="loadMore">View more pieces</button>
+      <span class="hint" id="showingLine"></span>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="band">
+  <span class="orb"></span><span class="orb o2"></span>
+  <div class="container band-in rv">
+    <span class="tag">Personal service</span>
+    <p class="t">“A question about a piece? We answer personally.”</p>
+    <a href="#" class="btn btn-wa wa-general" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+      WhatsApp +961 71 566 129
+    </a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about-intro rv">
+      <span class="tag">The Destination</span>
+      <span class="serif">Considered beauty, personally delivered.</span>
+      <p>ROSELLE × CENT OF YAS brings two beloved houses together in a single destination — every piece selected by hand, priced honestly, and confirmed by a real person before it reaches your door.</p>
+    </div>
+    <div class="values">
+      <div class="value rv"><i>01</i><h4>Curated</h4><p>A considered edit of essentials and statement pieces — never an endless aisle.</p></div>
+      <div class="value rv" style="transition-delay:.08s"><i>02</i><h4>Personal</h4><p>Order by message. A real person confirms every detail of your order with you.</p></div>
+      <div class="value rv" style="transition-delay:.16s"><i>03</i><h4>Delivered</h4><p>Carefully packed and swiftly delivered to your door — enjoy it, unwrapped beautifully.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="container contact-in">
+    <div class="rv">
+      <span class="tag">Ordering</span>
+      <h2>ORDER WITH A<br><span class="ita" style="font-family:'Cormorant Garamond';letter-spacing:0">single</span> MESSAGE.</h2>
+      <div class="steps">
+        <div class="step"><i>01</i><p><strong>Browse</strong>Explore the collection and add your favourites to the bag.</p></div>
+        <div class="step"><i>02</i><p><strong>Message</strong>Send your order on WhatsApp — your bag is written out for you.</p></div>
+        <div class="step"><i>03</i><p><strong>Receive</strong>We confirm, pack carefully, and deliver to your door.</p></div>
+      </div>
+    </div>
+    <div class="order-card tilt rv" style="transition-delay:.1s">
+      <span class="tag">Order line — Lebanon</span>
+      <a class="tel" href="tel:+96171566129">71 566 129</a>
+      <span class="intl">WHATSAPP +961 71 566 129</span>
+      <a href="#" class="btn btn-wa wa-general" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+        Message on WhatsApp
+      </a>
+      <a class="call-link" href="tel:+96171566129">Or call directly</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-in">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="fb-logos">
+          <img src="https://i.imgur.com/3uT6Lfu.jpeg" alt="ROSELLE logo" loading="lazy">
+          <img src="https://i.imgur.com/rJiv0TG.jpeg" alt="CENT OF YAS logo" loading="lazy">
+        </div>
+        <h3>ROSELLE <em>×</em> CENT OF YAS</h3>
+        <p>Two houses. One destination. Beauty, redefined — delivered with a single message.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Shop</h5>
+        <a href="#shop">All pieces</a>
+        <a href="#edit">The Edit</a>
+        <a href="#categories">Categories</a>
+        <a href="#brands">The houses</a>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <a class="wa-general" href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+96171566129">71 566 129</a>
+        <a href="#contact">How to order</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2025</span> Roselle × Cent of Yas — All rights reserved</span>
+      <span>Order line +961 71 566 129</span>
+    </div>
+  </div>
+</footer>
+
+<!-- QUICK VIEW MODAL -->
+<div class="qv" id="qv" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Product quick view">
+  <div class="qv-backdrop" data-close-qv></div>
+  <div class="qv-panel">
+    <button class="qv-close" data-close-qv aria-label="Close quick view">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+    <div class="qv-media">
+      <img id="qvImg" src="" alt="">
+      <div class="qv-thumbs" id="qvThumbs" style="display:none"></div>
+    </div>
+    <div class="qv-info">
+      <span class="tag" id="qvTag">№ 01 — Flowers</span>
+      <h3 id="qvName">№ 01</h3>
+      <p class="qv-price-row"><span id="qvPrice">$30</span></p>
+      <p class="qv-desc" id="qvDesc"></p>
+      <p class="qv-members" id="qvMembers" hidden></p>
+      <p class="qv-unpriced-note">Price upon request — message us for details</p>
+      <span class="qv-qty-label">Quantity</span>
+      <div class="qv-qty">
+        <button data-qvq="-1" aria-label="Decrease quantity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="4" y1="12" x2="20" y2="12"/></svg></button>
+        <span id="qvQty">1</span>
+        <button data-qvq="1" aria-label="Increase quantity"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></svg></button>
+      </div>
+      <div class="qv-actions">
+        <button class="btn btn-solid" id="qvAdd">Add to Bag
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>
+        </button>
+        <a class="btn btn-wa" id="qvWa" href="#" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+          Order via WhatsApp
+        </a>
+      </div>
+      <ul class="qv-notes">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Complimentary delivery on orders over $50</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Order direct — call or WhatsApp 71 566 129</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- CART DRAWER -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Shopping bag">
+  <div class="drawer-head">
+    <h3>Your Bag <span id="drawerCount">0</span></h3>
+    <button class="qv-close" id="closeBag" aria-label="Close bag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>
+    </button>
+  </div>
+  <div class="bag-items" id="bagItems"></div>
+  <div class="drawer-foot" id="drawerFoot">
+    <div class="subrow"><span>Subtotal</span><strong id="subTotal">$0</strong></div>
+    <p class="drawer-note">Delivery confirmed on WhatsApp — complimentary over $50.</p>
+    <a href="#" class="btn btn-wa" id="waCart" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></svg>
+      Order via WhatsApp
+    </a>
+    <span class="drawer-call">or call <a href="tel:+96171566129">71 566 129</a></span>
+  </div>
+</aside>
+
+<!-- TOAST -->
+<div class="toast" id="toast" role="status">
+  <span id="toastMsg">Added to your bag</span>
+  <button id="toastView">View bag</button>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script>
+/* ============================================================================
+   ROSELLE × CENT OF YAS — Storefront
+   ----------------------------------------------------------------------------
+   HOW TO EDIT PRODUCTS (prices, names, categories):
+   • price      : number in USD (30 or 1.5). Leave "" to show "Upon request".
+   • name       : display name (default "Product NN").
+   • category   : Flowers / Brushes / Cards / Bottles / Copybooks / Sets / Pins /
+                  Bags / Hair Tools / Stickers / Lights / Mugs / Makeup.
+   • featured   : true  → appears in "The Edit" + the "Featured" filter.
+   • description: optional — shown inside the quick-view panel.
+   • set        : [ids] → sells several pieces together as ONE listing at one
+                  price. All photos appear together in the quick view gallery.
+   • images     : the photo gallery of a set (leader photo first).
+   • hidden     : true  → the piece is sold inside a set, not listed alone.
+   NOTE: Products 44 & 45 were removed at the owner's request.
+         Products 46–101 are sold as priced pieces/sets per the owner's list.
+   ============================================================================ */
+const WA_NUMBER = "96171566129";
+
+const PRODUCTS = [
+  { id: 1,  name: "Product 01", image: "https://i.imgur.com/6lOeQKm.jpeg", price: 30,  category: "Flowers",   featured: true  },
+  { id: 2,  name: "Product 02", image: "https://i.imgur.com/5JWfvHT.jpeg", price: 10,  category: "Flowers",   featured: false },
+  { id: 3,  name: "Product 03", image: "https://i.imgur.com/hBErSk3.jpeg", price: 40,  category: "Flowers",   featured: true  },
+  { id: 4,  name: "Product 04", image: "https://i.imgur.com/ZuSKomr.jpeg", price: 40,  category: "Flowers",   featured: false },
+  { id: 5,  name: "Product 05", image: "https://i.imgur.com/cGDyHcq.jpeg", price: 50,  category: "Flowers",   featured: true  },
+  { id: 6,  name: "Product 06", image: "https://i.imgur.com/ZCCTtnp.jpeg", price: 20,  category: "Flowers",   featured: false },
+  { id: 7,  name: "Product 07", image: "https://i.imgur.com/8rchYV4.jpeg", price: 40,  category: "Flowers",   featured: false },
+  { id: 8,  name: "Product 08", image: "https://i.imgur.com/UnA9KJ4.jpeg", price: 4,   category: "Brushes",   featured: false },
+  { id: 9,  name: "Product 09", image: "https://i.imgur.com/TFKjXWp.jpeg", price: 4,   category: "Brushes",   featured: false },
+  { id: 10, name: "Product 10", image: "https://i.imgur.com/9otp4yl.jpeg", price: 2,   category: "Cards",     featured: false },
+  { id: 11, name: "Product 11", image: "https://i.imgur.com/Ubo47zJ.jpeg", price: 2,   category: "Cards",     featured: false },
+  { id: 12, name: "Product 12", image: "https://i.imgur.com/BowZ055.jpeg", price: 5,   category: "Bottles",   featured: false },
+  { id: 13, name: "Product 13", image: "https://i.imgur.com/5kzh8iF.jpeg", price: 4,   category: "Bottles",   featured: false },
+  { id: 14, name: "Product 14", image: "https://i.imgur.com/o6rccMT.jpeg", price: 4,   category: "Bottles",   featured: false },
+  { id: 15, name: "Product 15", image: "https://i.imgur.com/ic1tR0S.jpeg", price: 4,   category: "Bottles",   featured: false },
+  { id: 16, name: "Product 16", image: "https://i.imgur.com/qpCoIDZ.jpeg", price: 4,   category: "Bottles",   featured: false },
+  { id: 17, name: "Product 17", image: "https://i.imgur.com/iNENs8T.jpeg", price: 6,   category: "Copybooks", featured: false },
+  { id: 18, name: "Product 18", image: "https://i.imgur.com/SseLrly.jpeg", price: 6,   category: "Copybooks", featured: false },
+  { id: 19, name: "Product 19", image: "https://i.imgur.com/nwa8tae.jpeg", price: 28,  category: "Sets",      featured: true  },
+  { id: 20, name: "Product 20", image: "https://i.imgur.com/3SOTku3.jpeg", price: 4,   category: "Bottles",   featured: false },
+  { id: 21, name: "Product 21", image: "https://i.imgur.com/aAvdex5.jpeg", price: 25,  category: "Sets",      featured: true  },
+  { id: 22, name: "Product 22", image: "https://i.imgur.com/6yXSWDy.jpeg", price: 1.5, category: "Pins",      featured: false },
+  { id: 23, name: "Product 23", image: "https://i.imgur.com/RSNrBD4.jpeg", price: 1.5, category: "Pins",      featured: false },
+  { id: 24, name: "Product 24", image: "https://i.imgur.com/OeKklpO.jpeg", price: 1.5, category: "Pins",      featured: false },
+  { id: 25, name: "Product 25", image: "https://i.imgur.com/zBx4e5B.jpeg", price: 4,   category: "Bags",      featured: false },
+  { id: 26, name: "Product 26", image: "https://i.imgur.com/v2vF375.jpeg", price: 1.5, category: "Pins",      featured: false },
+  { id: 27, name: "Product 27", image: "https://i.imgur.com/64ayaep.jpeg", price: 1,   category: "Pins",      featured: false },
+  { id: 28, name: "Product 28", image: "https://i.imgur.com/BSlWgiJ.jpeg", price: 2.5, category: "Hair Tools",featured: false },
+  { id: 29, name: "Product 29", image: "https://i.imgur.com/1q1eU7E.jpeg", price: 4,   category: "Copybooks", featured: false },
+  { id: 30, name: "Product 30", image: "https://i.imgur.com/Su7YRFN.jpeg", price: 3,   category: "Copybooks", featured: false },
+  { id: 31, name: "Product 31", image: "https://i.imgur.com/1eOCn19.jpeg", price: 3,   category: "Copybooks", featured: false },
+  { id: 32, name: "Product 32", image: "https://i.imgur.com/SPRqFwg.jpeg", price: 1.5, category: "Stickers",  featured: false },
+  { id: 33, name: "Product 33", image: "https://i.imgur.com/ScSVtHF.jpeg", price: 7,   category: "Copybooks", featured: false },
+  { id: 34, name: "Product 34", image: "https://i.imgur.com/pEdw4mr.jpeg", price: 5,   category: "Copybooks", featured: false },
+  { id: 35, name: "Product 35", image: "https://i.imgur.com/XddGUJV.jpeg", price: 1,   category: "Copybooks", featured: false },
+  { id: 36, name: "Product 36", image: "https://i.imgur.com/1YMXUei.jpeg", price: 4,   category: "Copybooks", featured: false },
+  { id: 37, name: "Product 37", image: "https://i.imgur.com/TfwWwy8.jpeg", price: 4,   category: "Copybooks", featured: false },
+  { id: 38, name: "Product 38", image: "https://i.imgur.com/uB3a5TI.jpeg", price: 8,   category: "Lights",    featured: false },
+  { id: 39, name: "Product 39", image: "https://i.imgur.com/caZiJZd.jpeg", price: 50,  category: "Sets",      featured: true  },
+  { id: 40, name: "Product 40", image: "https://i.imgur.com/QT4TWmK.jpeg", price: 18,  category: "Sets",      featured: false },
+  { id: 41, name: "Product 41", image: "https://i.imgur.com/ULciDNH.jpeg", price: 20,  category: "Sets",      featured: false },
+  { id: 42, name: "Product 42", image: "https://i.imgur.com/IdQmwAe.jpeg", price: 16,  category: "Sets",      featured: false },
+  { id: 43, name: "Product 43", image: "https://i.imgur.com/0x1rmDY.jpeg", price: 15,  category: "Mugs",      featured: false },
+  /* Products 44 & 45 deleted (owner request). */
+  /* ---- Products 46–101: sold as priced pieces & sets per the owner's list ---- */
+  { id: 46,  name: "Product 46", image: "https://i.imgur.com/8H2FutU.jpeg", price: 3,   category: "Mugs",      featured: false, set: [46, 48, 49], images: ["https://i.imgur.com/8H2FutU.jpeg", "https://i.imgur.com/wTtBEV3.jpeg", "https://i.imgur.com/jkEwwFK.jpeg"] },
+  { id: 47,  name: "Product 47", image: "https://i.imgur.com/UfgGs6U.jpeg", price: 5,   category: "Mugs",      featured: false, set: [47, 50, 52], images: ["https://i.imgur.com/UfgGs6U.jpeg", "https://i.imgur.com/RJRrl2w.jpeg", "https://i.imgur.com/InrnzWA.jpeg"] },
+  { id: 48,  name: "Product 48", image: "https://i.imgur.com/wTtBEV3.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 46 */
+  { id: 49,  name: "Product 49", image: "https://i.imgur.com/jkEwwFK.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 46 */
+  { id: 50,  name: "Product 50", image: "https://i.imgur.com/RJRrl2w.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 47 */
+  { id: 51,  name: "Product 51", image: "https://i.imgur.com/SM73W6b.jpeg", price: 12,  category: "Sets",      featured: false },
+  { id: 52,  name: "Product 52", image: "https://i.imgur.com/InrnzWA.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 47 */
+  { id: 53,  name: "Product 53", image: "https://i.imgur.com/NhmBaaU.jpeg", price: 4,   category: "Bags",      featured: false },
+  { id: 54,  name: "Product 54", image: "https://i.imgur.com/wREm0pG.jpeg", price: 6,   category: "Makeup",    featured: false },
+  { id: 55,  name: "Product 55", image: "https://i.imgur.com/1THZEet.jpeg", price: 6.5, category: "Bags",      featured: false },
+  { id: 56,  name: "Product 56", image: "https://i.imgur.com/LJLphRU.jpeg", price: 4,   category: "Hair Tools",featured: false },
+  { id: 57,  name: "Product 57", image: "https://i.imgur.com/RshCvwu.jpeg", price: 25,  category: "Sets",      featured: false },
+  { id: 58,  name: "Product 58", image: "https://i.imgur.com/73sZWjJ.jpeg", price: 25,  category: "Sets",      featured: false },
+  { id: 59,  name: "Product 59", image: "https://i.imgur.com/hDfg0mn.jpeg", price: 3,   category: "Hair Tools",featured: false, set: [59, 60, 61], images: ["https://i.imgur.com/hDfg0mn.jpeg", "https://i.imgur.com/kprZ476.jpeg", "https://i.imgur.com/nOakqNS.jpeg"] },
+  { id: 60,  name: "Product 60", image: "https://i.imgur.com/kprZ476.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 59 */
+  { id: 61,  name: "Product 61", image: "https://i.imgur.com/nOakqNS.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 59 */
+  { id: 62,  name: "Product 62", image: "https://i.imgur.com/VbkXksS.jpeg", price: 25,  category: "Sets",      featured: false },
+  { id: 63,  name: "Product 63", image: "https://i.imgur.com/7jUoF7x.jpeg", price: 25,  category: "Sets",      featured: false },
+  { id: 64,  name: "Product 64", image: "https://i.imgur.com/nsMGO6a.jpeg", price: 25,  category: "Sets",      featured: false },
+  { id: 65,  name: "Product 65", image: "https://i.imgur.com/sJGitAo.jpeg", price: 10,  category: "Mugs",      featured: false, set: [65, 66, 70, 71], images: ["https://i.imgur.com/sJGitAo.jpeg", "https://i.imgur.com/9CfqUSp.jpeg", "https://i.imgur.com/1u0Kkk8.jpeg", "https://i.imgur.com/4Nrx42a.jpeg"] },
+  { id: 66,  name: "Product 66", image: "https://i.imgur.com/9CfqUSp.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 65 */
+  { id: 67,  name: "Product 67", image: "https://i.imgur.com/HCuJ4F6.jpeg", price: 3,   category: "Hair Tools",featured: false },
+  { id: 68,  name: "Product 68", image: "https://i.imgur.com/mDXXVOf.jpeg", price: 5,   category: "Mugs",      featured: false, set: [68, 69, 72], images: ["https://i.imgur.com/mDXXVOf.jpeg", "https://i.imgur.com/A9XYjKL.jpeg", "https://i.imgur.com/L6GuZOg.jpeg"] },
+  { id: 69,  name: "Product 69", image: "https://i.imgur.com/A9XYjKL.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 68 */
+  { id: 70,  name: "Product 70", image: "https://i.imgur.com/1u0Kkk8.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 65 */
+  { id: 71,  name: "Product 71", image: "https://i.imgur.com/4Nrx42a.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 65 */
+  { id: 72,  name: "Product 72", image: "https://i.imgur.com/L6GuZOg.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 68 */
+  { id: 73,  name: "Product 73", image: "https://i.imgur.com/mxML6sP.jpeg", price: 6,   category: "Mugs",      featured: false, set: [73, 74, 75, 79], images: ["https://i.imgur.com/mxML6sP.jpeg", "https://i.imgur.com/z9pCQxB.jpeg", "https://i.imgur.com/eMkbG3O.jpeg", "https://i.imgur.com/S4feBcg.jpeg"] },
+  { id: 74,  name: "Product 74", image: "https://i.imgur.com/z9pCQxB.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 73 */
+  { id: 75,  name: "Product 75", image: "https://i.imgur.com/eMkbG3O.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 73 */
+  { id: 76,  name: "Product 76", image: "https://i.imgur.com/hYBOpfi.jpeg", price: 4,   category: "Mugs",      featured: false, set: [76, 77, 78], images: ["https://i.imgur.com/hYBOpfi.jpeg", "https://i.imgur.com/NFm8t56.jpeg", "https://i.imgur.com/rRJdnSm.jpeg"] },
+  { id: 77,  name: "Product 77", image: "https://i.imgur.com/NFm8t56.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 76 */
+  { id: 78,  name: "Product 78", image: "https://i.imgur.com/rRJdnSm.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 76 */
+  { id: 79,  name: "Product 79", image: "https://i.imgur.com/S4feBcg.jpeg", price: "",  category: "Mugs",      featured: false, hidden: true }, /* sold in Set 73 */
+  { id: 80,  name: "Product 80", image: "https://i.imgur.com/Fa8Tj2j.jpeg", price: 3.5, category: "Hair Tools",featured: false, set: [80, 84, 85, 86, 87, 88], images: ["https://i.imgur.com/Fa8Tj2j.jpeg", "https://i.imgur.com/SdDhLOi.jpeg", "https://i.imgur.com/jeS6jRq.jpeg", "https://i.imgur.com/VGXmA7E.jpeg", "https://i.imgur.com/Ft4qE2Z.jpeg", "https://i.imgur.com/kZOM8lz.jpeg"] },
+  { id: 81,  name: "Product 81", image: "https://i.imgur.com/W40rHZ7.jpeg", price: 6,   category: "Hair Tools",featured: false, set: [81, 82, 83, 92], images: ["https://i.imgur.com/W40rHZ7.jpeg", "https://i.imgur.com/YOl2YeA.jpeg", "https://i.imgur.com/ZpAw5rg.jpeg", "https://i.imgur.com/mycvjDg.jpeg"] },
+  { id: 82,  name: "Product 82", image: "https://i.imgur.com/YOl2YeA.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 81 */
+  { id: 83,  name: "Product 83", image: "https://i.imgur.com/ZpAw5rg.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 81 */
+  { id: 84,  name: "Product 84", image: "https://i.imgur.com/SdDhLOi.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 80 */
+  { id: 85,  name: "Product 85", image: "https://i.imgur.com/jeS6jRq.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 80 */
+  { id: 86,  name: "Product 86", image: "https://i.imgur.com/VGXmA7E.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 80 */
+  { id: 87,  name: "Product 87", image: "https://i.imgur.com/Ft4qE2Z.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 80 */
+  { id: 88,  name: "Product 88", image: "https://i.imgur.com/kZOM8lz.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 80 */
+  { id: 89,  name: "Product 89", image: "https://i.imgur.com/h0eq34J.jpeg", price: 6,   category: "Hair Tools",featured: false, set: [89, 90, 91], images: ["https://i.imgur.com/h0eq34J.jpeg", "https://i.imgur.com/jkG8KQC.jpeg", "https://i.imgur.com/FI53tSR.jpeg"] },
+  { id: 90,  name: "Product 90", image: "https://i.imgur.com/jkG8KQC.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 89 */
+  { id: 91,  name: "Product 91", image: "https://i.imgur.com/FI53tSR.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 89 */
+  { id: 92,  name: "Product 92", image: "https://i.imgur.com/mycvjDg.jpeg", price: "",  category: "Hair Tools",featured: false, hidden: true }, /* sold in Set 81 */
+  { id: 93,  name: "Product 93", image: "https://i.imgur.com/DiGphx3.jpeg", price: 6,   category: "Lights",    featured: false, set: [93, 94, 95, 96, 97], images: ["https://i.imgur.com/DiGphx3.jpeg", "https://i.imgur.com/X0PHHa4.jpeg", "https://i.imgur.com/oqGZf52.jpeg", "https://i.imgur.com/TGRjFz0.jpeg", "https://i.imgur.com/TLNCanX.jpeg"] },
+  { id: 94,  name: "Product 94", image: "https://i.imgur.com/X0PHHa4.jpeg", price: "",  category: "Lights",    featured: false, hidden: true }, /* sold in Set 93 */
+  { id: 95,  name: "Product 95", image: "https://i.imgur.com/oqGZf52.jpeg", price: "",  category: "Lights",    featured: false, hidden: true }, /* sold in Set 93 */
+  { id: 96,  name: "Product 96", image: "https://i.imgur.com/TGRjFz0.jpeg", price: "",  category: "Lights",    featured: false, hidden: true }, /* sold in Set 93 */
+  { id: 97,  name: "Product 97", image: "https://i.imgur.com/TLNCanX.jpeg", price: "",  category: "Lights",    featured: false, hidden: true }, /* sold in Set 93 */
+  { id: 98,  name: "Product 98", image: "https://i.imgur.com/47gq9zL.jpeg", price: 8,   category: "Lights",    featured: false, set: [98, 99, 100, 101], images: ["https://i.imgur.com/47gq9zL.jpeg", "https://i.imgur.com/vHk8sBt.jpeg", "https://i.imgur.com/jkCmgdk.jpeg", "https://i.imgur.com/E2p8ZlX.jpeg"] },
+  { id: 99,  name: "Product 99", image: "https://i.imgur.com/vHk8sBt.jpeg", price: "",  category: "Lights",    featured: false, hidden: true }, /* sold in Set 98 */
+  { id: 100, name: "Product 100", image: "https://i.imgur.com/jkCmgdk.jpeg", price: "", category: "Lights",    featured: false, hidden: true }, /* sold in Set 98 */
+  { id: 101, name: "Product 101", image: "https://i.imgur.com/E2p8ZlX.jpeg", price: "", category: "Lights",    featured: false, hidden: true }  /* sold in Set 98 */
+];
+
+const CATS = ["All", "Featured", "Flowers", "Brushes", "Cards", "Bottles", "Copybooks", "Sets", "Pins", "Bags", "Hair Tools", "Stickers", "Lights", "Mugs", "Makeup"];
+const CAT_REP = { "Flowers": 1, "Brushes": 8, "Cards": 10, "Bottles": 12, "Copybooks": 17, "Sets": 19, "Pins": 22, "Bags": 25, "Hair Tools": 28, "Stickers": 32, "Lights": 38, "Mugs": 43, "Makeup": 54 };
+
+/* ============ HELPERS ============ */
+const $  = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
+const pad = n => String(n).padStart(2, "0");
+const byId = id => PRODUCTS.find(p => p.id === id);
+const isPriced = p => p.price !== "" && p.price !== null && !isNaN(+p.price);
+const isSet = p => !!(p.set && p.set.length > 1);
+function fmt(p){
+  if (p === "" || p === null || isNaN(+p)) return "Upon request";
+  p = +p;
+  return "$" + (Number.isInteger(p) ? p : p.toFixed(2));
+}
+function waLink(msg){ return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg); }
+const ICON_PLUS  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>';
+const ICON_CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+const ICON_MINUS = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>';
+const ICON_X     = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></svg>';
+const ICON_BAG   = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1 13H5L6 7z"/><path d="M9 7V6a3 3 0 0 1 6 0v1"/></svg>';
+const ICON_BOLT  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>';
+const ICON_PREV  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>';
+const ICON_NEXT  = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>';
+const LARGE_IDS  = new Set([7, 13, 25, 38, 47, 57, 65, 81, 93]); /* editorial large tiles */
+
+/* ============ WHATSAPP MESSAGES ============ */
+function lineName(p){
+  return isSet(p)
+    ? "№ " + pad(p.id) + " · Set of " + p.set.length + " (№ " + p.set.map(pad).join(" + ") + ")"
+    : "№ " + pad(p.id);
+}
+function productMsg(p, qty){
+  const priced = isPriced(p);
+  let m = "Hello, I would like to order:\n\n";
+  m += lineName(p) + " × " + qty + (priced ? " — " + fmt(+p.price * qty) : "");
+  if (priced) m += "\n\nTotal: " + fmt(+p.price * qty);
+  m += "\n\nPlease confirm my order.";
+  return m;
+}
+function cartMsg(){
+  let m = "Hello, I would like to order:\n\n", total = 0;
+  cart.forEach(ci => {
+    const p = byId(ci.id); if (!p || !isPriced(p)) return;
+    const lt = +p.price * ci.qty; total += lt;
+    m += lineName(p) + " × " + ci.qty + " — " + fmt(lt) + "\n";
+  });
+  m += "\nTotal: " + fmt(total) + "\n\nPlease confirm my order.";
+  return m;
+}
+
+/* ============ REVEAL ON SCROLL ============ */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(en => { if (en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); } });
+}, { threshold: .06, rootMargin: "0px 0px -30px 0px" });
+function observeAll(){ $$(".rv:not(.in)").forEach(el => io.observe(el)); }
+
+/* ============ PRODUCT CARD ============ */
+function cardHTML(p, i, allowBig){
+  const no = pad(p.id), set = isSet(p);
+  const big = allowBig && LARGE_IDS.has(p.id);
+  const gallery = (p.images && p.images.length ? p.images : [p.image]);
+  return `<article class="card tilt rv${big ? " tile-lg" : ""}" data-id="${p.id}" style="transition-delay:${(i % 6) * 45}ms">
+    <div class="card-media" data-qv="${p.id}" data-idx="0" role="button" tabindex="0" aria-label="Quick view № ${no}">
+      <img src="${gallery[0]}" alt="№ ${no}" loading="lazy" decoding="async">
+      <span class="card-no">№ ${no}</span>
+      ${set ? `<span class="card-setbadge">Set × ${p.set.length}</span>` : ""}
+      ${set ? `<button class="cyc prev" data-cyc="${p.id}|-1" aria-label="Previous photo">${ICON_PREV}</button>
+               <button class="cyc next" data-cyc="${p.id}|1" aria-label="Next photo">${ICON_NEXT}</button>
+               <span class="cyc-dots">${gallery.map((g, k) => `<button class="cyc-dot${k === 0 ? " on" : ""}" data-cycd="${p.id}|${k}" aria-label="Photo ${k + 1}"></button>`).join("")}</span>` : ""}
+      <span class="card-qv">Quick View</span>
+    </div>
+    <div class="card-info">
+      <div>
+        <h3>${p.category}</h3>
+        ${set ? `<p class="card-members">Set of ${p.set.length} · № ${p.set.map(pad).join(" + ")}</p>` : ""}
+      </div>
+      <span class="card-price">${fmt(p.price)}</span>
+    </div>
+    <div class="card-actions">
+      <button class="ca-add" data-add="${p.id}" aria-label="Add № ${no} to bag">${ICON_BAG}<span>Add to Bag</span></button>
+      <button class="ca-buy" data-buy="${p.id}" aria-label="Buy № ${no} now">${ICON_BOLT}<span>Buy Now</span></button>
+    </div>
+  </article>`;
+}
+
+/* ============ SHOP: STATE / FILTER / SORT / RENDER ============ */
+const state = { cat: "All", q: "", sort: "curated", visible: 24 };
+const BATCH = 24;
+
+function pk(p, desc){ return isPriced(p) ? +p.price : (desc ? -1 : Infinity); }
+function getFiltered(){
+  let list = PRODUCTS.filter(p => {
+    if (p.hidden) return false;
+    if (state.cat === "Featured" && !p.featured) return false;
+    if (state.cat !== "All" && state.cat !== "Featured" && p.category !== state.cat) return false;
+    const q = state.q; if (!q) return true;
+    const ql = q.toLowerCase(), digits = q.replace(/\D/g, "");
+    return p.name.toLowerCase().includes(ql)
+        || p.category.toLowerCase().includes(ql)
+        || (digits && p.id === parseInt(digits, 10))
+        || (digits && p.set && p.set.indexOf(parseInt(digits, 10)) !== -1);
+  });
+  const s = state.sort;
+  list = [...list];
+  if (s === "num-desc")   list.sort((a, b) => b.id - a.id);
+  else if (s === "price-asc")  list.sort((a, b) => pk(a) - pk(b));
+  else if (s === "price-desc") list.sort((a, b) => pk(b, true) - pk(a, true));
+  else list.sort((a, b) => a.id - b.id);
+  return list;
+}
+function renderShop(){
+  const list = getFiltered();
+  const slice = list.slice(0, state.visible);
+  $("#shopGrid").innerHTML = slice.map((p, i) => cardHTML(p, i, true)).join("");
+  $("#countLine").textContent = list.length + (list.length === 1 ? " piece" : " pieces");
+  $("#shopEmpty").hidden = list.length > 0;
+  const remaining = list.length - slice.length;
+  $("#loadMoreWrap").style.display = remaining > 0 ? "" : "none";
+  if (remaining > 0) $("#showingLine").textContent = "Showing " + slice.length + " of " + list.length;
+  observeAll();
+}
+function setCategory(cat, scroll){
+  state.cat = cat; state.visible = BATCH;
+  $$("#filters .fbtn").forEach(x => x.classList.toggle("on", x.dataset.cat === cat));
+  renderShop();
+  if (scroll) document.querySelector("#shop").scrollIntoView({ behavior: "smooth" });
+}
+
+/* Filters */
+$("#filters").innerHTML = CATS.map(c => `<button class="fbtn${c === "All" ? " on" : ""}" data-cat="${c}" role="tab">${c}</button>`).join("");
+$("#filters").addEventListener("click", e => {
+  const b = e.target.closest("[data-cat]"); if (!b) return;
+  setCategory(b.dataset.cat, false);
+});
+
+/* Search */
+let searchT;
+$("#searchInput").addEventListener("input", e => {
+  clearTimeout(searchT);
+  searchT = setTimeout(() => { state.q = e.target.value.trim(); state.visible = BATCH; renderShop(); }, 140);
+});
+$("#resetFilters").addEventListener("click", () => {
+  state.q = ""; $("#searchInput").value = "";
+  setCategory("All", false);
+});
+
+/* Sort + load more */
+$("#sortSelect").addEventListener("change", e => { state.sort = e.target.value; state.visible = BATCH; renderShop(); });
+$("#loadMore").addEventListener("click", () => { state.visible += BATCH; renderShop(); });
+
+/* Featured grid + category tiles */
+function renderEdit(){ $("#editGrid").innerHTML = PRODUCTS.filter(p => p.featured).map((p, i) => cardHTML(p, i, false)).join(""); }
+function renderCats(){
+  $("#catGrid").innerHTML = CATS.filter(c => c !== "All" && c !== "Featured").map((c, i) => {
+    const items = PRODUCTS.filter(p => !p.hidden && p.category === c);
+    const rep = byId(CAT_REP[c]);
+    if (!items.length || !rep) return "";
+    return `<button class="cat-tile tilt rv" data-catgo="${c}" style="transition-delay:${(i % 4) * 60}ms">
+      <span class="ct-media"><img src="${rep.image}" alt="${c}" loading="lazy" decoding="async">
+        <span class="ct-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></span>
+      </span>
+      <span class="ct-info"><strong>${c}</strong><em>${items.length} ${items.length === 1 ? "piece" : "pieces"}</em></span>
+    </button>`;
+  }).join("");
+}
+
+/* ============ CART (localStorage) ============ */
+const STORAGE_KEY = "rcy_cart_v2";
+let cart = [];
+try {
+  cart = (JSON.parse(localStorage.getItem(STORAGE_KEY)) || [])
+      .filter(ci => byId(ci.id) && isPriced(byId(ci.id)) && ci.qty > 0);
+} catch(e){ cart = []; }
+function saveCart(){ try { localStorage.setItem(STORAGE_KEY, JSON.stringify(cart)); } catch(e){} }
+function cartCount(){ return cart.reduce((n, ci) => n + ci.qty, 0); }
+function cartTotal(){ return cart.reduce((n, ci) => { const p = byId(ci.id); return p && isPriced(p) ? n + (+p.price * ci.qty) : n; }, 0); }
+
+function renderBadge(){
+  const n = cartCount(), el = $("#bagCount");
+  el.textContent = n; el.classList.toggle("has", n > 0);
+}
+function addToCart(id, qty){
+  const p = byId(id); if (!p || !isPriced(p)) return;
+  qty = qty || 1;
+  const line = cart.find(ci => ci.id === id);
+  if (line) line.qty = Math.min(99, line.qty + qty); else cart.push({ id, qty });
+  saveCart(); renderBadge(); renderBag();
+  showToast("№ " + pad(id) + " added to your bag");
+  const bag = $("#openBag");
+  bag.classList.remove("bump"); void bag.offsetWidth; bag.classList.add("bump");
+}
+function buyNow(id){
+  const p = byId(id); if (!p || !isPriced(p)) return;
+  if (!cart.find(ci => ci.id === id)) cart.push({ id, qty: 1 });
+  saveCart(); renderBadge(); renderBag();
+  showToast("№ " + pad(id) + " is in your bag — ready to order");
+  setTimeout(openBag, 180);
+}
+function changeQty(id, delta){
+  const line = cart.find(ci => ci.id === id); if (!line) return;
+  line.qty += delta;
+  if (line.qty <= 0) cart = cart.filter(ci => ci.id !== id);
+  saveCart(); renderBadge(); renderBag();
+}
+function removeLine(id){ cart = cart.filter(ci => ci.id !== id); saveCart(); renderBadge(); renderBag(); }
+
+function renderBag(){
+  const box = $("#bagItems");
+  $("#drawerCount").textContent = cartCount();
+  if (!cart.length){
+    box.innerHTML = `<div class="bag-empty">
+      <p class="t">Your bag is empty.</p>
+      <p>Browse the collection and add the pieces you love.</p>
+      <button class="btn btn-solid" id="emptyShop">Explore the Collection</button>
+    </div>`;
+    $("#drawerFoot").style.display = "none";
+    return;
+  }
+  $("#drawerFoot").style.display = "";
+  box.innerHTML = cart.map(ci => {
+    const p = byId(ci.id); if (!p) return "";
+    const lt = +p.price * ci.qty;
+    return `<div class="bag-item">
+      <div class="bi-media"><img src="${p.image}" alt="№ ${pad(p.id)}" loading="lazy"></div>
+      <div class="bi-info">
+        <h4>№ ${pad(p.id)}${isSet(p) ? " · Set ×" + p.set.length : ""}</h4>
+        <p class="bi-unit">${fmt(p.price)} ${isSet(p) ? "per set" : "each"}</p>
+        <div class="bi-qty">
+          <button data-cart-dec="${p.id}" aria-label="Decrease quantity">${ICON_MINUS}</button>
+          <span>${ci.qty}</span>
+          <button data-cart-inc="${p.id}" aria-label="Increase quantity">${ICON_PLUS}</button>
+        </div>
+      </div>
+      <div class="bi-right">
+        <button class="bi-del" data-cart-del="${p.id}" aria-label="Remove № ${pad(p.id)}">${ICON_X}</button>
+        <span class="bi-total">${fmt(lt)}</span>
+      </div>
+    </div>`;
+  }).join("");
+  $("#subTotal").textContent = fmt(cartTotal());
+  $("#waCart").href = waLink(cartMsg());
+}
+
+/* ============ OVERLAYS ============ */
+let locks = 0;
+function lock(){ locks++; document.body.classList.add("lock"); }
+function unlock(){ locks = Math.max(0, locks - 1); if (!locks) document.body.classList.remove("lock"); }
+
+let bagOpen = false;
+function openBag(){ if (bagOpen) return; bagOpen = true; $("#drawer").classList.add("open"); $("#drawer").setAttribute("aria-hidden","false"); $("#scrim").classList.add("show"); lock(); }
+function closeBag(){ if (!bagOpen) return; bagOpen = false; $("#drawer").classList.remove("open"); $("#drawer").setAttribute("aria-hidden","true"); $("#scrim").classList.remove("show"); unlock(); }
+
+let qvOpen = false, qvState = { id: null, qty: 1 }, qvGallery = [];
+function openQV(id){
+  const p = byId(id); if (!p) return;
+  qvState = { id, qty: 1 };
+  const priced = isPriced(p), set = isSet(p);
+  qvGallery = (p.images && p.images.length ? p.images : [p.image]);
+  $("#qvImg").src = qvGallery[0]; $("#qvImg").alt = p.name; $("#qvImg").style.opacity = 1;
+  $("#qvTag").textContent = "№ " + pad(p.id) + " — " + p.category;
+  $("#qvName").textContent = "№ " + pad(p.id) + (set ? " — Set of " + p.set.length : "");
+  $("#qvPrice").innerHTML = priced ? fmt(p.price) : '<span class="req">Upon request</span>';
+  $("#qvDesc").textContent = p.description || "A considered piece from the ROSELLE × CENT OF YAS collection.";
+  const mem = $("#qvMembers");
+  if (set){ mem.hidden = false; mem.textContent = "This set includes " + p.set.map(n => "№ " + pad(n)).join("  ·  "); }
+  else { mem.hidden = true; mem.textContent = ""; }
+  const th = $("#qvThumbs");
+  if (qvGallery.length > 1){
+    th.innerHTML = qvGallery.map((src, k) =>
+      `<button class="qv-thumb${k === 0 ? " on" : ""}" data-qvthumb="${k}" aria-label="Photo ${k + 1}"><img src="${src}" alt=""></button>`
+    ).join("");
+    th.style.display = "";
+  } else { th.innerHTML = ""; th.style.display = "none"; }
+  $("#qvQty").textContent = "1";
+  $("#qvWa").href = waLink(productMsg(p, 1));
+  $("#qv").classList.toggle("unpriced", !priced);
+  $("#qv").classList.add("open"); $("#qv").setAttribute("aria-hidden","false");
+  qvOpen = true; lock();
+}
+function closeQV(){ if (!qvOpen) return; qvOpen = false; $("#qv").classList.remove("open"); $("#qv").setAttribute("aria-hidden","true"); unlock(); }
+
+let menuOpenState = false;
+function openMenu(){ if (menuOpenState) return; menuOpenState = true; $("#mmenu").classList.add("open"); lock(); }
+function closeMenu(){ if (!menuOpenState) return; menuOpenState = false; $("#mmenu").classList.remove("open"); unlock(); }
+
+/* ============ TOAST ============ */
+let toastT;
+function showToast(msg){
+  $("#toastMsg").textContent = msg;
+  const t = $("#toast");
+  t.classList.add("show");
+  clearTimeout(toastT);
+  toastT = setTimeout(() => t.classList.remove("show"), 2600);
+}
+
+/* ============ GLOBAL CLICK DELEGATION ============ */
+document.addEventListener("click", e => {
+  const add = e.target.closest("[data-add]");
+  if (add){
+    e.preventDefault();
+    addToCart(+add.dataset.add, 1);
+    if (!add.dataset.orig) add.dataset.orig = add.innerHTML;
+    add.classList.add("added"); add.innerHTML = ICON_CHECK + "<span>Added</span>";
+    setTimeout(() => { add.classList.remove("added"); add.innerHTML = add.dataset.orig; }, 950);
+    return;
+  }
+  const buy = e.target.closest("[data-buy]");
+  if (buy){ e.preventDefault(); buyNow(+buy.dataset.buy); return; }
+  const cyc = e.target.closest("[data-cyc]");
+  if (cyc){
+    e.preventDefault();
+    cyclePhoto(cyc.closest(".card-media"), +cyc.dataset.cyc.split("|")[0], +cyc.dataset.cyc.split("|")[1]);
+    return;
+  }
+  const cycDot = e.target.closest("[data-cycd]");
+  if (cycDot){
+    e.preventDefault();
+    const [id, k] = cycDot.dataset.cycd.split("|");
+    const media = cycDot.closest(".card-media");
+    cyclePhoto(media, +id, (+k) - (+(media.dataset.idx || 0)));
+    return;
+  }
+  const catgo = e.target.closest("[data-catgo]");
+  if (catgo){ setCategory(catgo.dataset.catgo, true); return; }
+  const qv = e.target.closest("[data-qv]");
+  if (qv){ openQV(+qv.dataset.qv); return; }
+  if (e.target.closest("[data-close-qv]")){ closeQV(); return; }
+  const thBtn = e.target.closest("[data-qvthumb]");
+  if (thBtn){
+    if (qvGallery[+thBtn.dataset.qvthumb]) $("#qvImg").src = qvGallery[+thBtn.dataset.qvthumb];
+    $$("#qvThumbs .qv-thumb").forEach(b => b.classList.toggle("on", b === thBtn));
+    return;
+  }
+  const dec = e.target.closest("[data-cart-dec]"); if (dec){ changeQty(+dec.dataset.cartDec, -1); return; }
+  const inc = e.target.closest("[data-cart-inc]"); if (inc){ changeQty(+inc.dataset.cartInc,  1); return; }
+  const del = e.target.closest("[data-cart-del]"); if (del){ removeLine(+del.dataset.cartDel); return; }
+  const qvq = e.target.closest("[data-qvq]");
+  if (qvq){
+    qvState.qty = Math.max(1, Math.min(99, qvState.qty + (+qvq.dataset.qvq)));
+    $("#qvQty").textContent = qvState.qty;
+    const p = byId(qvState.id);
+    $("#qvWa").href = waLink(productMsg(p, qvState.qty));
+    return;
+  }
+  if (e.target.closest("#emptyShop")){ closeBag(); document.querySelector("#shop").scrollIntoView({ behavior: "smooth" }); return; }
+});
+
+/* Set photo cycler (grid cards) */
+function cyclePhoto(media, id, dir){
+  const p = byId(id); if (!p || !p.images || !media) return;
+  const img = media.querySelector("img");
+  const dots = media.querySelectorAll(".cyc-dot");
+  let idx = +(media.dataset.idx || 0);
+  idx = ((idx + dir) % p.images.length + p.images.length) % p.images.length;
+  media.dataset.idx = idx;
+  img.style.opacity = 0;
+  setTimeout(() => { img.src = p.images[idx]; img.style.opacity = 1; }, 170);
+  dots.forEach((d, k) => d.classList.toggle("on", k === idx));
+}
+
+$("#qvAdd").addEventListener("click", () => {
+  addToCart(qvState.id, qvState.qty);
+  closeQV(); openBag();
+});
+document.addEventListener("keydown", e => {
+  if (e.key === "Escape"){ if (qvOpen) closeQV(); else if (bagOpen) closeBag(); else if (menuOpenState) closeMenu(); }
+  if (e.key === "Enter" && e.target.matches && e.target.matches("[data-qv]")) openQV(+e.target.dataset.qv);
+});
+$("#openBag").addEventListener("click", openBag);
+$("#closeBag").addEventListener("click", closeBag);
+$("#scrim").addEventListener("click", () => { closeBag(); });
+$("#toastView").addEventListener("click", () => { $("#toast").classList.remove("show"); openBag(); });
+
+/* ============ NAV / MENU / SEARCH / TOTOP ============ */
+$("#burger").addEventListener("click", openMenu);
+$("#mmenuClose").addEventListener("click", closeMenu);
+$$(".mmenu-nav a").forEach(a => a.addEventListener("click", closeMenu));
+$("#navSearch").addEventListener("click", () => {
+  document.querySelector("#shop").scrollIntoView({ behavior: "smooth" });
+  setTimeout(() => $("#searchInput").focus({ preventScroll: true }), 650);
+});
+$("#toTop").addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+/* Header state + back-to-top + hero parallax */
+const header = $("#siteHeader"), toTop = $("#toTop");
+const parEls = $$(".par");
+let ticking = false;
+function onScroll(){
+  const y = window.scrollY;
+  header.classList.toggle("scrolled", y > 8);
+  toTop.classList.toggle("show", y > 700);
+  if (window.innerWidth > 940){
+    parEls.forEach(el => { el.style.transform = "translate3d(0," + (y * +el.dataset.speed).toFixed(1) + "px,0)"; });
+  } else {
+    parEls.forEach(el => { el.style.transform = ""; });
+  }
+  ticking = false;
+}
+window.addEventListener("scroll", () => { if (!ticking){ requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
+
+/* ============ 3D TILT ENGINE (desktop, pointer-fine) ============ */
+const finePointer = window.matchMedia("(hover:hover) and (pointer:fine)").matches;
+let tiltEl = null, tiltRaf = null;
+function resetTilt(el){ el.style.transform = ""; el.classList.remove("tilting"); }
+document.addEventListener("pointermove", e => {
+  if (!finePointer) return;
+  const el = e.target.closest && e.target.closest(".tilt");
+  if (tiltEl && tiltEl !== el){ resetTilt(tiltEl); tiltEl = null; }
+  if (!el) return;
+  tiltEl = el;
+  const r = el.getBoundingClientRect();
+  if (r.width === 0) return;
+  const x = (e.clientX - r.left) / r.width, y = (e.clientY - r.top) / r.height;
+  if (tiltRaf) cancelAnimationFrame(tiltRaf);
+  tiltRaf = requestAnimationFrame(() => {
+    el.style.transform = "perspective(900px) rotateX(" + ((0.5 - y) * 5).toFixed(2) + "deg) rotateY(" + ((x - 0.5) * 7).toFixed(2) + "deg) translateY(-4px)";
+    el.style.setProperty("--mx", (x * 100).toFixed(1) + "%");
+    el.style.setProperty("--my", (y * 100).toFixed(1) + "%");
+  });
+}, { passive: true });
+document.addEventListener("pointerout", e => {
+  if (!finePointer) return;
+  const el = e.target.closest && e.target.closest(".tilt");
+  if (el && !el.contains(e.relatedTarget)){ resetTilt(el); if (tiltEl === el) tiltEl = null; }
+});
+
+/* ============ CLICK RIPPLE EFFECT ============ */
+const RIPPLE_SEL = ".btn, .card-actions button, .cat-tile, .cyc, .qv-thumb, .qv-close, .fbtn, .qv-qty button, .bi-qty button, .to-top, .mmenu-close, .link-arrow";
+document.addEventListener("pointerdown", e => {
+  const el = e.target.closest && e.target.closest(RIPPLE_SEL);
+  if (!el) return;
+  const r = el.getBoundingClientRect();
+  if (r.width === 0) return;
+  const s = document.createElement("span");
+  s.className = "ripple";
+  const size = Math.max(r.width, r.height) * 1.15;
+  s.style.width = s.style.height = size + "px";
+  s.style.left = (e.clientX - r.left - size / 2) + "px";
+  s.style.top = (e.clientY - r.top - size / 2) + "px";
+  el.appendChild(s);
+  setTimeout(() => s.remove(), 720);
+}, { passive: true });
+
+/* ============ HERO SPLIT LETTERS ============ */
+$$(".split").forEach(el => {
+  const txt = el.textContent;
+  el.textContent = "";
+  [...txt].forEach((ch, k) => {
+    const s = document.createElement("span");
+    s.textContent = ch === " " ? "\u00A0" : ch;
+    s.style.setProperty("--i", k);
+    el.appendChild(s);
+  });
+});
+
+/* ============ HERO COUNTERS ============ */
+const visibleCount = PRODUCTS.filter(p => !p.hidden).length;
+$("#mPieces").dataset.count = visibleCount;
+$("#mCats").dataset.count = CATS.length - 2;
+function countUp(el){
+  const target = +el.dataset.count; if (!target) return;
+  const t0 = performance.now(), dur = 1400;
+  function step(t){
+    const pr = Math.min(1, (t - t0) / dur);
+    el.textContent = Math.round(target * (1 - Math.pow(1 - pr, 3)));
+    if (pr < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+const ioCount = new IntersectionObserver(ents => {
+  ents.forEach(en => { if (en.isIntersecting){ countUp(en.target); ioCount.unobserve(en.target); } });
+}, { threshold: .5 });
+$$(".count").forEach(el => ioCount.observe(el));
+
+/* ============ PRELOADER ============ */
+const pre = $("#preloader");
+function hidePre(){ if (!pre || pre.classList.contains("done")) return; pre.classList.add("done"); setTimeout(() => pre.remove(), 900); }
+window.addEventListener("load", () => setTimeout(hidePre, 1100));
+setTimeout(hidePre, 3400);
+
+/* ============ ANNOUNCEMENT ROTATOR ============ */
+const ANN = [
+  "Complimentary delivery on orders over $50",
+  "Order via WhatsApp — +961 71 566 129",
+  "Roselle × Cent of Yas — two houses, one destination"
+];
+let annI = 0;
+setInterval(() => {
+  const el = $("#annText");
+  el.classList.add("out");
+  setTimeout(() => { annI = (annI + 1) % ANN.length; el.textContent = ANN[annI]; el.classList.remove("out"); }, 320);
+}, 4200);
+
+/* ============ WHATSAPP GENERAL LINKS ============ */
+const GENERAL_MSG = "Hello ROSELLE × CENT OF YAS! I would like to place an order.";
+$$(".wa-general").forEach(a => { a.href = waLink(GENERAL_MSG); });
+
+/* ============ INIT ============ */
+$("#year").textContent = new Date().getFullYear();
+renderBadge();
+renderBag();
+renderEdit();
+renderCats();
+renderShop();
+observeAll();
+onScroll();
+</script>
+</body>
+</html>
